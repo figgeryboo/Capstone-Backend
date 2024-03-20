@@ -13,10 +13,10 @@ CREATE TABLE
         dietary_offering VARCHAR(255) NOT NULL,
         rating_average DECIMAL,
         menu TEXT,
-        accessible BOOLEAN
+        accessible BOOLEAN, 
+        coordinates JSON
     );
 
--- location POINT NOT NULL
 CREATE TABLE
     customers (
         customer_id SERIAL PRIMARY KEY,
