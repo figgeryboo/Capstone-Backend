@@ -2,11 +2,11 @@ const db = require("../db/dbConfig");
 
 const createVendor = async (vendor) => {
   try {
-    const { vendor_name, contact_info, vendor_image_url, dietary_offering } = vendor;
-
+    const { vendor_name, contact_info, vendor_image_url, dietary_offering, coordinates } = vendor;
+console.log(JSON.stringify(coordinates))
     const newVendor = await db.one(
-      "INSERT INTO vendors (vendor_name, contact_info, vendor_image_url, dietary_offering) VALUES ($1, $2, $3, $4) RETURNING *",
-      [vendor_name, contact_info, vendor_image_url, dietary_offering]
+      "INSERT INTO vendors (vendor_name, contact_info, vendor_image_url, dietary_offering, coordinates) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+      [vendor_name, contact_info, vendor_image_url, dietary_offering, JSON.stringify(coordinates)]
     );
     return newVendor;
   } catch (err) {
