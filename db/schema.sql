@@ -12,7 +12,8 @@ CREATE TABLE
         vendor_image_url TEXT,
         dietary_offering VARCHAR(255) NOT NULL,
         rating_average DECIMAL,
-        menu TEXT,
+        payment_types TEXT[],
+        menu JSON,
         accessible BOOLEAN, 
         coordinates JSON
     );
