@@ -2,7 +2,6 @@ const app = require('./app.js')
 require("dotenv").config()
 const PORT = process.env.PORT
 
-
 const WebSocket = require('ws');
 const server = require('http').createServer(app);
 const wss = new WebSocket.Server({ server });
@@ -26,10 +25,6 @@ wss.on('connection', (ws) => {
     console.log('Client disconnected');
   });
 });
-
-// server.listen(4444, () => {
-//   console.log('WebSocket server is running on port 4444');
-// });
 
 
 app.listen, server.listen(PORT, ()=> {
