@@ -18,7 +18,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free',
         4.5,
-        '{"cash", "credit card", "online payment"}',
+        '{"cash 💲", "credit card 💳", "online payment"}',
         '[
              { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
                 { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
@@ -61,7 +61,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         3.8,
-        '{"cash", "credit card", "bitcoin"}',
+        '{"cash 💲", "credit card 💳", "bitcoin ₿"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
                 { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -100,7 +100,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         4.2,
-        '{"cash", "online payment"}',
+        '{"cash 💲", "online payment"}',
         '[
             { "name": "Fruit Sorbet Cup", "description": "Assorted fruit flavors in a refreshing sorbet", "price": 3.99 },
             { "name": "Mango Tango Popsicle", "description": "Tropical mango flavor in a fun popsicle", "price": 2.49 },
@@ -145,7 +145,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         4.5,
-        '{"cash", "credit card", "bitcoin", "online payment"}',
+        '{"cash 💲", "credit card 💳", "bitcoin ₿", "online payment"}',
         '[
            { "name": "Strawberry Ice Cream Cone", "description": "Fresh strawberry ice cream in a cone", "price": 3.99 },
             { "name": "Oreo Cookie Sandwich (Oreo Ice Cream Sandwich)", "description": "Classic Oreo cookies with vanilla ice cream", "price": 4.49 },
