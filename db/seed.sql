@@ -61,7 +61,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         3.8,
-        '{"cash 💲", "credit card 💳", "bitcoin ₿"}',
+        '{"cash 💲", "credit card 💳", "bitcoin ₿", "online payment"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
                 { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -266,7 +266,7 @@ INSERT INTO
         vendor_id,
         review_text,
         rating,
-        rating_date
+        review_date
     )
 VALUES
     (
@@ -326,23 +326,46 @@ VALUES
         '2024-03-18'
     );
 
+
 INSERT INTO
     events (
         vendor_id,
+        event_date,
+        event_time,
         delivery_location,
-        items,
+        menu_items,
+        event_size,
+        dietary_options,
         special_instructions
     )
 VALUES
     (
         1,
-        POINT (40.7128, -74.0060),
-        '["...", "..."]',
-        'Handle with care'
+        '2024-04-23',
+        '10:00:00',
+        '350 5th Ave, New York, NY 10118',
+        'Classic ice cream sandwiches, Chocolate Chip Cookie Sandwich, Root Beer Floats, Banana Splits',
+        '40',
+        'Vegetarian',
+        '15 of each menu item pleas eand thank you.'
     ),
     (
         2,
-        POINT (34.0522, -118.2437),
-        '["...", "..."]',
-        'Call upon arrival'
+        '2024-05-15',
+        '13:00:00',
+        '230 Park Ave, New York, NY 10169',
+        'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
+        '60',
+        'Vegan',
+        'Gluten-free options needed. 25 of each item please.'
+    ),
+    (
+        3,
+        '2024-06-20',
+        '18:30:00',
+        '11 Madison Ave, New York, NY 10010',
+        'Mango Tango Popsicles, Fruit Sorbet Cups',
+        '120',
+        'Kosher',
+        '70 of each menu items. Thank you.'
     );
