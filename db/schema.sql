@@ -31,12 +31,12 @@ CREATE TABLE
 
 CREATE TABLE
     reviews (
-        rating_id SERIAL PRIMARY KEY,
+        review_id SERIAL PRIMARY KEY,
         user_id INT NOT NULL,
         vendor_id INT NOT NULL,
         review_text TEXT,
         rating DECIMAL NOT NULL,
-        rating_date DATE DEFAULT CURRENT_DATE,
+        review_date DATE DEFAULT CURRENT_DATE,
         CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES customers (customer_id),
         CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id)
     );
@@ -46,8 +46,12 @@ CREATE TABLE
         order_id SERIAL PRIMARY KEY,
         vendor_id INT NOT NULL,
         order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        delivery_location POINT NOT NULL,
-        items TEXT NOT NULL,
+        event_date DATE NOT NULL,
+        event_time TIME NOT NULL, 
+        delivery_location TEXT NOT NULL,
+        menu_items TEXT NOT NULL,
+        event_size INT NOT NULL,
+        dietary_options TEXT NOT NULL,
         special_instructions TEXT,
         CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id)
     );
