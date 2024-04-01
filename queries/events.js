@@ -3,6 +3,7 @@ const db = require("../db/dbConfig");
 const createEvent = async (event) => {
   try {
     const {
+      customer_id,
       vendor_id,
       order_time,
       event_date,
@@ -14,8 +15,9 @@ const createEvent = async (event) => {
       special_instructions,
     } = event;
     const newEvent = await db.one(
-      "INSERT INTO events (vendor_id, order_time, event_date, event_time, delivery_location, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *",
+      "INSERT INTO events (customer_id, vendor_id, order_time, event_date, event_time, delivery_location, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *",
       [
+        customer_id,
         vendor_id,
         order_time,
         event_date,

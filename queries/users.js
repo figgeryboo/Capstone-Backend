@@ -61,6 +61,18 @@ const getCustomerById = async (id) => {
   }
 };
 
+const getCustomerByFirebaseId = async (id) => {
+  try {
+    const customer = await db.oneOrNone(
+      "SELECT * FROM customers WHERE firebase_id = $1",
+      [id]
+    );
+    return customer;
+  } catch (err) {
+    return err;
+  }
+};
+
 const updateCustomer = async (id, customer) => {
   try {
     const { name, contact_info, customer_image_url, dietary_preferences } =
@@ -90,6 +102,7 @@ module.exports = {
   getAllCustomers,
   getCustomerByEmail,
   getCustomerById,
+  getCustomerByFirebaseId,
   updateCustomer,
   deleteCustomer,
 };

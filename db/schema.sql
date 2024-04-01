@@ -15,16 +15,18 @@ CREATE TABLE
         payment_types TEXT[],
         menu JSON,
         accessible BOOLEAN, 
-        coordinates JSON
+        coordinates JSON,
+        transaction_metrics JSON
     );
 
 CREATE TABLE
     customers (
         customer_id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        contact_info VARCHAR(255) NOT NULL,
+        firebase_id TEXT,
+        name VARCHAR(255) ,
+        contact_info VARCHAR(255) ,
         customer_image_url TEXT,
-        location POINT NOT NULL,
+        location POINT ,
         loyalty_points INT,
         dietary_preferences TEXT
     );
@@ -44,6 +46,7 @@ CREATE TABLE
 CREATE TABLE
     events (
         order_id SERIAL PRIMARY KEY,
+        customer_id INT,
         vendor_id INT NOT NULL,
         order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         event_date DATE NOT NULL,
@@ -53,5 +56,6 @@ CREATE TABLE
         event_size INT NOT NULL,
         dietary_options TEXT NOT NULL,
         special_instructions TEXT,
+        confirmed boolean,
         CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id) ON DELETE CASCADE
     );
