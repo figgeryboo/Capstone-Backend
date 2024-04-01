@@ -1,7 +1,7 @@
 const express = require("express");
 const vendors = express.Router();
 
-const {createVendor, getAllVendors,getVendorById, updateVendor, deleteVendor} = require('../queries/vendors')
+const {createVendor, vendorSignUp, getAllVendors,getVendorById, updateVendor, deleteVendor} = require('../queries/vendors')
 
 vendors.get("/", async (req, res) => {
     try {
@@ -14,12 +14,14 @@ vendors.get("/", async (req, res) => {
 
   vendors.post("/", async (req, res) => {
     try {
-        const newVendor = await createVendor(req.body);
+        const newVendor = await vendorSignUp(req.body);
         res.status(201).json(newVendor);
     } catch (err) {
         res.status(500).json({ error: err });
     }
 });
+
+
 
 vendors.get("/:id", async (req, res) => {
   try {

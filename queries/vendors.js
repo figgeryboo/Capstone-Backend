@@ -27,6 +27,16 @@ const createVendor = async (vendor) => {
   }
 };
 
+const vendorSignUp = async (vendorData) => {
+  try {
+    const newFbVendor = await createVendor(vendorData);
+    return newFbVendor;
+  } catch (err) {
+    return err;
+  }
+}
+
+
 const getAllVendors = async () => {
   try {
     const vendors = await db.any("SELECT * FROM vendors");
@@ -89,6 +99,7 @@ const deleteVendor = async (id) => {
 };
 module.exports = {
   createVendor,
+  vendorSignUp,
   getVendorById,
   getAllVendors,
   updateVendor,

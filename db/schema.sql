@@ -56,5 +56,6 @@ CREATE TABLE
         event_size INT NOT NULL,
         dietary_options TEXT NOT NULL,
         special_instructions TEXT,
+        confirmed boolean,
         CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id) ON DELETE CASCADE
     );

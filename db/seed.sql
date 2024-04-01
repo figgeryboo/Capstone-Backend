@@ -350,7 +350,8 @@ INSERT INTO
         menu_items,
         event_size,
         dietary_options,
-        special_instructions
+        special_instructions,
+        confirmed
     )
 VALUES
     (
@@ -362,7 +363,8 @@ VALUES
         'Classic ice cream sandwiches, Chocolate Chip Cookie Sandwich, Root Beer Floats, Banana Splits',
         '40',
         'Vegetarian',
-        '15 of each menu item pleas eand thank you.'
+        '15 of each menu item pleas eand thank you.',
+        false
     ),
     (
         4,
@@ -373,7 +375,9 @@ VALUES
         'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
         '60',
         'Vegan',
-        'Gluten-free options needed. 25 of each item please.'
+        'Gluten-free options needed. 25 of each item please.',
+        false
+
     ),
     (
         3,
@@ -384,5 +388,6 @@ VALUES
         'Mango Tango Popsicles, Fruit Sorbet Cups',
         '120',
         'Kosher',
-        '70 of each menu items. Thank you.'
+        '70 of each menu items. Thank you.',
+        false
     );
