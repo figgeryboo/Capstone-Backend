@@ -9,7 +9,8 @@ INSERT INTO
         payment_types,
         menu,
         accessible,
-        coordinates
+        coordinates,
+        transaction_metrics
     )
 VALUES
     (
@@ -53,7 +54,8 @@ VALUES
             {"lat": 40.846827, "lng": -73.91036},
             {"lat": 40.846762, "lng": -73.910202},
             {"lat": 40.846688, "lng": -73.910008}
-        ]'
+        ]',
+        '{"daily": 500, "weekly": 3500, "monthly": 14000}'
     ),
     (
         'Vandhana Benjamin',
@@ -92,7 +94,8 @@ VALUES
             {"lat": 40.847892, "lng": -73.903583},
             {"lat": 40.84794, "lng": -73.903694},
             {"lat": 40.848009, "lng": -73.904024}
-        ]'
+        ]',
+        '{"daily": 300, "weekly": 2100, "monthly": 8400}'
     ),
     (
         'Dolores Madrigal',
@@ -137,7 +140,8 @@ VALUES
             {"lat": 40.811646, "lng": -73.916807},
             {"lat": 40.811530, "lng": -73.916422},
             {"lat": 40.811362, "lng": -73.915908}
-        ]'
+        ]',
+        '{"daily": 180, "weekly": 1050, "monthly": 4200}'
     ),
     (
         'Jimin Park',
@@ -198,11 +202,13 @@ VALUES
             {"lat": 40.759306, "lng": -73.996669},
             {"lat": 40.759369, "lng": -73.996828},
             {"lat": 40.759466, "lng": -73.997058}
-        ]'
+        ]',
+        '{"daily": 850, "weekly": 5950, "monthly": 23800}'
     );
 
 INSERT INTO
     customers (
+        firebase_id,
         name,
         contact_info,
         customer_image_url,
@@ -211,6 +217,7 @@ INSERT INTO
     )
 VALUES
     (
+        'pGFES9M8cThClXi1D5kQuRlXMTI3',
         'Sarah',
         '070-000-0000',
         'https://example.com/customer1.jpg',
@@ -218,6 +225,7 @@ VALUES
         'Non Dairy'
     ),
     (
+        'a8GJlC7oPtSWqB5jRd2MkRuDFzN2',
         'Jane',
         '111-111-1111',
         'https://example.com/customer2.jpg',
@@ -225,6 +233,7 @@ VALUES
         'Non Dairy'
     ),
     (
+        'b3FgR9oCmJlDqAt5Hk8QwSuVmZx1',
         'Julio',
         '222-222-2222',
         'https://example.com/customer3.jpg',
@@ -232,6 +241,7 @@ VALUES
         'None'
     ),
     (
+        'c1DfR2mN5gJlQs3Wt8KuVbYzAxP7',
         'Charlie',
         '333-333-3333',
         'https://example.com/customer4.jpg',
@@ -239,6 +249,7 @@ VALUES
         'None'
     ),
     (
+        'd9QwScVmZx1b3FgR8HjMlDqAt5Ku',
         'Stef',
         '201-555-4432',
         'https://example.com/customer5.jpg',
@@ -246,6 +257,7 @@ VALUES
         'None'
     ),
     (
+        'e2Zx1b3D9QgR8HjMlDqAt5KuVwSc',
         'Ash',
         '404-529-5555',
         'https://example.com/customer6.jpg',
@@ -253,6 +265,7 @@ VALUES
         'None'
     ),
     (
+        'f7D9QgR8HjMlDqAt5KuVb3FgR2x1',
         'Ant',
         '777-777-7777',
         'https://example.com/customer7.jpg',
@@ -329,6 +342,7 @@ VALUES
 
 INSERT INTO
     events (
+        customer_id,
         vendor_id,
         event_date,
         event_time,
@@ -340,6 +354,7 @@ INSERT INTO
     )
 VALUES
     (
+        2,
         1,
         '2024-04-23',
         '10:00:00',
@@ -350,6 +365,7 @@ VALUES
         '15 of each menu item pleas eand thank you.'
     ),
     (
+        4,
         2,
         '2024-05-15',
         '13:00:00',
@@ -360,6 +376,7 @@ VALUES
         'Gluten-free options needed. 25 of each item please.'
     ),
     (
+        3,
         3,
         '2024-06-20',
         '18:30:00',

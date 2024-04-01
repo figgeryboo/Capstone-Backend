@@ -7,6 +7,7 @@ const {
   updateCustomer,
   deleteCustomer,
   getCustomerById,
+  getCustomerByFirebaseId
 } = require("../queries/users");
 
 customers.get("/", async (req, res) => {
@@ -41,6 +42,20 @@ customers.get("/:id", async (req, res) => {
   }
 });
 
+customers.get("/:firebase_id", async (req, res) => {
+    try {
+      const { id } = req.params;
+      const customer = await getCustomerByFirebaseId(id);
+      if (!customer) {
+        res.status(404).json({ error: "User not found" });
+      } else {
+        res.status(200).json(customer);
+      }
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+  
 customers.put('/:id', async (req, res) => {
     try {
       const { id } = req.params;
