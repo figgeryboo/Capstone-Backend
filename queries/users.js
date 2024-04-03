@@ -75,12 +75,12 @@ const getCustomerByFirebaseId = async (id) => {
 
 const updateCustomer = async (id, customer) => {
   try {
-    const { name, contact_info, customer_image_url, dietary_preferences } =
+    const { name, email, contact_info, customer_image_url, dietary_preferences } =
       customer;
 
     const updatedCustomer = await db.one(
-      "UPDATE customers SET name = $1, contact_info = $2, customer_image_url = $3, dietary_preferences = $4 WHERE customer_id = $5 RETURNING *",
-      [name, contact_info, customer_image_url, dietary_preferences, id]
+      "UPDATE customers SET name = $1, email =$2, contact_info = $3, customer_image_url = $4, dietary_preferences = $5 WHERE customer_id = $6 RETURNING *",
+      [name, email, contact_info, customer_image_url, dietary_preferences, id]
     );
     return updatedCustomer;
   } catch (err) {

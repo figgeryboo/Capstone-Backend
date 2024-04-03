@@ -22,9 +22,9 @@ CREATE TABLE
 CREATE TABLE
     customers (
         customer_id SERIAL PRIMARY KEY,
-        firebase_id TEXT,
-        name VARCHAR(255) ,
-        contact_info VARCHAR(255) ,
+        name VARCHAR(255),
+        email TEXT,
+        contact_info VARCHAR(255),
         customer_image_url TEXT,
         location POINT ,
         loyalty_points INT,
@@ -46,16 +46,16 @@ CREATE TABLE
 CREATE TABLE
     events (
         order_id SERIAL PRIMARY KEY,
-        customer_id INT,
-        vendor_id INT NOT NULL,
+        customer_id TEXT NOT NULL,
+        vendor_id TEXT NOT NULL,
         order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         event_date DATE NOT NULL,
         event_time TIME NOT NULL, 
         delivery_location TEXT NOT NULL,
+        budget TEXT NOT NULL,
         menu_items TEXT NOT NULL,
         event_size INT NOT NULL,
         dietary_options TEXT NOT NULL,
         special_instructions TEXT,
-        confirmed boolean,
-        CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id) ON DELETE CASCADE
+        confirmed boolean
     );
