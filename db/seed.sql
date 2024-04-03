@@ -274,8 +274,7 @@ VALUES
             {"lat": 40.811530, "lng": -73.916422},
             {"lat": 40.811362, "lng": -73.915908}
         ]',
-        '[
-            {
+        '[{
                 "period": "daily",
                 "sales": {
                     "Mon": 160, "Tue": 170, "Wed": 180, "Thu": 190, "Fri": 200, "Sat": 190, "Sun": 160
@@ -361,8 +360,7 @@ VALUES
             {"lat": 40.759369, "lng": -73.996828},
             {"lat": 40.759466, "lng": -73.997058}
          ]',
-        '[
-            {
+        '[{
                 "period": "daily",
                 "sales": {
                     "Mon": 800, "Tue": 850, "Wed": 900, "Thu": 950, "Fri": 1000, "Sat": 950, "Sun": 800
@@ -438,8 +436,7 @@ VALUES
             {"lat": 40.736953, "lng": -73.990446},
             {"lat": 40.736903, "lng": -73.990485}
         ]',
-        '[
-            {
+        '[{
                 "period": "daily",
                 "sales": {
                     "Mon": 60, "Tue": 65, "Wed": 70, "Thu": 75, "Fri": 80, "Sat": 85, "Sun": 90
@@ -468,7 +465,7 @@ VALUES
 
 INSERT INTO
     customers (
-        name,
+        customer_name,
         email,
         contact_info,
         customer_image_url,
@@ -478,7 +475,7 @@ INSERT INTO
 VALUES
     (
         'Sarah Paulsen',
-        'SarahPaulsen@gmail.com'
+        'SarahPaulsen@gmail.com',
         '917-200-0800',
         'https://example.com/customer1.jpg',
         POINT (40.7128, -74.0060),
@@ -486,7 +483,7 @@ VALUES
     ),
     (
         'Jane Austen',
-        'JAusten24@yahoo.com'
+        'JAusten24@yahoo.com',
         '404-191-1201',
         'https://example.com/customer2.jpg',
         POINT (40.793522, -73.932437),
@@ -494,7 +491,7 @@ VALUES
     ),
     (
         'Sam Boahen',
-        'SBgoated@icloud.com'
+        'SBgoated@icloud.com',
         '252-222-2022',
         'https://example.com/customer3.jpg',
         POINT (40.793422, -73.932837),
@@ -502,7 +499,7 @@ VALUES
     ),
     (
         'Charlie Pluth',
-        'CPluth@atlantic.com'
+        'CPluth@atlantic.com',
         '303-493-2860',
         'https://example.com/customer4.jpg',
         POINT (40.846587, -73.903811),
@@ -510,7 +507,7 @@ VALUES
     ),
     (
         'Stef Barros',
-        'Sbarros21@gmail.com'
+        'Sbarros21@gmail.com',
         '201-555-4432',
         'https://example.com/customer5.jpg',
         POINT (40.759959, -73.992032),
@@ -518,7 +515,7 @@ VALUES
     ),
     (
         'Ash Ketchum',
-        'GPT@pokemon.com'
+        'GPT@pokemon.com',
         '404-529-5555',
         'https://example.com/customer6.jpg',
         POINT (40.747999, -73.996346),
@@ -526,7 +523,7 @@ VALUES
     ),
     (
         'Ant Owens',
-        'Aowens728@gmail.com'
+        'Aowens728@gmail.com',
         '707-497-6320',
         'https://example.com/customer7.jpg',
         POINT (40.731722, -73.998703),
@@ -601,8 +598,8 @@ VALUES
 
 INSERT INTO
     events (
-        customer_name,
-        vendor_name,
+        customer_id,
+        vendor_id,
         event_date,
         event_time,
         delivery_location,
@@ -616,7 +613,7 @@ INSERT INTO
 VALUES
     (
         2,
-        'Vladimir Andanov',
+        1,
         '2024-04-23',
         '10:00:00',
         '350 5th Ave, New York, NY 10118',
@@ -629,7 +626,7 @@ VALUES
     ),
     (
         4,
-        'Vandhana Benjamin',
+        2,
         '2024-05-15',
         '13:00:00',
         '230 Park Ave, New York, NY 10169',
@@ -642,7 +639,7 @@ VALUES
     ),
     (
         3,
-        'Dolores Madrigal',
+        3,
         '2024-06-20',
         '18:30:00',
         '11 Madison Ave, New York, NY 10010',

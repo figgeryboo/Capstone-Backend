@@ -22,7 +22,7 @@ CREATE TABLE
 CREATE TABLE
     customers (
         customer_id SERIAL PRIMARY KEY,
-        name VARCHAR(255),
+        customer_name VARCHAR(255),
         email TEXT,
         contact_info VARCHAR(255),
         customer_image_url TEXT,
