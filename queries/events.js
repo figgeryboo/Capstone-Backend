@@ -15,7 +15,7 @@ const createEvent = async (event) => {
       special_instructions,
     } = event;
     const newEvent = await db.one(
-      "INSERT INTO events (customer_id, vendor_id, order_time, event_date, event_time, delivery_location, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *",
+      "INSERT INTO events (customer_id, vendor_id, order_time, event_date, event_time, delivery_location, budget, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING *",
       [
         customer_id,
         vendor_id,
@@ -23,6 +23,7 @@ const createEvent = async (event) => {
         event_date,
         event_time,
         delivery_location,
+        budget,
         menu_items,
         event_size,
         dietary_options,
@@ -87,10 +88,11 @@ const updateEvent = async (id, event) => {
       event_size,
       dietary_options,
       special_instructions,
+      confirmed
     } = event;
 
     const updatedEvent = await db.one(
-      "UPDATE events SET vendor_id = $1, event_date = $2, event_time = $3, delivery_location = $4, menu_items = $5, event_size = $6, dietary_options = $7, special_instructions = $8 WHERE order_id = $9 RETURNING *",
+      "UPDATE events SET vendor_id = $1, event_date = $2, event_time = $3, delivery_location = $4, menu_items = $5, event_size = $6, dietary_options = $7, special_instructions = $8, confirmed =$9 WHERE order_id = $10 RETURNING *",
       [
         vendor_id,
         event_date,
@@ -100,6 +102,7 @@ const updateEvent = async (id, event) => {
         event_size,
         dietary_options,
         special_instructions,
+        confirmed,
         id,
       ]
     );
