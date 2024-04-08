@@ -34,7 +34,44 @@ const vendorSignUp = async (vendorData) => {
   } catch (err) {
     return err;
   }
-}
+};
+
+const addVendorLocations = async (uid, locations) => {
+  try {
+    const newVendor = await db.one(
+      "INSERT into firebaseVendors (uid, locations) VALUES ($1, $2) RETURNING *", [uid, JSON.stringify(locations)]
+    );
+    return newVendor;
+  } catch (err) {
+    return err;
+  }
+};
+
+const getVendorLocations = async () => {
+  try {
+    const vendorLocations = await db.any(
+      "SELECT uid, locations FROM firebaseVendors"
+    );
+    return vendorLocations;
+  } catch (err) {
+    return err;
+  }
+};
+
+const updateVendorLocations = async (uid, locations) => {
+  try {
+    // Convert locations array to a JSON string
+    const locationsString = JSON.stringify(locations);
+    // Create the SQL query with the JSON string of coordinates
+    const query = `UPDATE firebaseVendors SET locations = $1 WHERE uid = $2 RETURNING *`;
+    // Execute the query with the UID parameter
+    const updatedVendor = await db.one(query, [locationsString, uid]);
+    return updatedVendor;
+  } catch (err) {
+    throw err;
+  }
+};
+
 
 // const vendorPostLocation = async () => {
 
@@ -54,6 +91,18 @@ const getVendorById = async (id) => {
     const vendor = await db.oneOrNone(
       "SELECT * FROM vendors WHERE vendor_id = $1",
       [id]
+    );
+    return vendor;
+  } catch (err) {
+    return err;
+  }
+};
+
+const getVendorByuid = async (uid) => {
+  try {
+    const vendor = await db.oneOrNone(
+      "SELECT * FROM firebaseVendors WHERE uid = $1",
+      [uid]
     );
     return vendor;
   } catch (err) {
@@ -102,8 +151,12 @@ const deleteVendor = async (id) => {
 };
 module.exports = {
   createVendor,
+  getVendorLocations,
+  addVendorLocations,
+  updateVendorLocations,
   vendorSignUp,
   getVendorById,
+  getVendorByuid,
   getAllVendors,
   updateVendor,
   deleteVendor,

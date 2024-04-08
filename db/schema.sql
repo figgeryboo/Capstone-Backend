@@ -68,6 +68,7 @@ firebaseUsers (
 
 create table 
 firebaseVendors (
-    uid text,
-    email text
+    uid TEXT PRIMARY KEY,
+    email text,
+    locations JSON
 );
