@@ -9,6 +9,7 @@ const createEvent = async (event) => {
       event_date,
       event_time,
       delivery_location,
+      budget,
       menu_items,
       event_size,
       dietary_options,

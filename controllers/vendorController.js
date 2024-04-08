@@ -14,7 +14,7 @@ vendors.get("/", async (req, res) => {
 
   vendors.post("/", async (req, res) => {
     try {
-        const newVendor = await vendorSignUp(req.body);
+        const newVendor = await createVendor(req.body);
         res.status(201).json(newVendor);
     } catch (err) {
         res.status(500).json({ error: err });

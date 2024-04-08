@@ -77,7 +77,7 @@ reviews.get("/ratings/:startDate/:endDate", async (req, res) => {
   }
 });
 
-reviews.post("/", async (req, res) => {
+reviews.post("/vendor/:vendorId", async (req, res) => {
   const { userId, vendorId, reviewText, rating, ratingDate } = req.body;
   try {
     const newRating = await addRating(
@@ -98,6 +98,7 @@ reviews.put("/:ratingId", async (req, res) => {
   const { ratingId } = req.params;
   const { newRating } = req.body;
   const userId = req.user.id; 
+  console.log(userId)
   try {
     const review = await getRatingById(ratingId);
     if (review.userId !== userId) {

@@ -3,24 +3,16 @@ const db = require("../db/dbConfig");
 const createCustomer = async (customer) => {
   try {
     const {
-      name,
       email,
       contact_info,
       customer_image_url,
-      location,
       dietary_preferences,
+      firebase_id,
     } = customer;
 
     const newCustomer = await db.one(
-      "INSERT INTO customers (name, email, contact_info, customer_image_url, location, dietary_preferences) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
-      [
-        name,
-        email,
-        contact_info,
-        customer_image_url,
-        location,
-        dietary_preferences,
-      ]
+      "INSERT INTO customers ( email, contact_info, customer_image_url, dietary_preferences) VALUES ($1, $2, $3, $4) RETURNING *",
+      [email, contact_info, customer_image_url, dietary_preferences]
     );
     return newCustomer;
   } catch (err) {
@@ -75,8 +67,13 @@ const getCustomerByFirebaseId = async (id) => {
 
 const updateCustomer = async (id, customer) => {
   try {
-    const { name, email, contact_info, customer_image_url, dietary_preferences } =
-      customer;
+    const {
+      name,
+      email,
+      contact_info,
+      customer_image_url,
+      dietary_preferences,
+    } = customer;
 
     const updatedCustomer = await db.one(
       "UPDATE customers SET name = $1, email =$2, contact_info = $3, customer_image_url = $4, dietary_preferences = $5 WHERE customer_id = $6 RETURNING *",

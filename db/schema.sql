@@ -59,3 +59,15 @@ CREATE TABLE
         special_instructions TEXT,
         confirmed boolean
     );
+
+create table 
+firebaseUsers (
+    uid text,
+    email text
+);
+
+create table 
+firebaseVendors (
+    uid text,
+    email text
+);

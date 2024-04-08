@@ -612,7 +612,7 @@ INSERT INTO
     )
 VALUES
     (
-        2,
+        3,
         1,
         '2024-04-23',
         '10:00:00',
@@ -621,28 +621,54 @@ VALUES
         'Classic ice cream sandwiches, Chocolate Chip Cookie Sandwich, Root Beer Floats, Banana Splits',
         '40',
         'Vegetarian',
-        '15 of each menu item pleas eand thank you.',
+        '15 of each menu item please. Thank you.',
         false
     ),
     (
-        4,
+        5,
         2,
         '2024-05-15',
         '13:00:00',
-        '230 Park Ave, New York, NY 10169',
+        '230 Park Avenue, New York, NY 10017',
         '$800',
         'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
         '60',
         'Vegan',
-        'Gluten-free options needed. 25 of each item please.',
+        'Gluten-free options needed. 25 of each item, please.',
         false
     ),
     (
-        3,
+        4,
+        5,
+        '2024-05-25',
+        '13:30:00',
+        '228 Madison Ave, New York, NY 10016',
+        '$3300',
+        'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
+        '260',
+        'Vegan',
+        'Gluten-free options needed. 40 of each item, thank you.',
+        false
+    ),
+    (
+        2,
+        5,
+        '2024-08-22',
+        '13:00:00',
+        '2230 White Plains RdBronx, NY 10467',
+        '$800',
+        'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
+        '34',
+        'Vegan',
+        'Gluten-free options needed. 25 of each item, please.',
+        false
+    ),
+    (
+        7,
         3,
         '2024-06-20',
         '18:30:00',
-        '11 Madison Ave, New York, NY 10010',
+        '3963 Orloff Ave, Bronx, NY 10463',
         '$1200',
         'Mango Tango Popsicles, Fruit Sorbet Cups',
         '120',
@@ -650,3 +676,8 @@ VALUES
         '70 of each menu items. Thank you.',
         false
     );
+
+INSERT INTO firebaseUsers(uid, email) VALUES('YEFGFitu9nUVzr7BkUXC3nXYVXZ2', 'mary22@email.com');
+
+
+INSERT INTO firebasevendors(uid, email) VALUES('1sSDT9CSbuWq0Aygp02wp6sN48h1', 'ricktrock@gmail.com');
