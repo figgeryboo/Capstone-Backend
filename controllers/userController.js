@@ -7,6 +7,7 @@ const {
   updateCustomer,
   deleteCustomer,
   getCustomerById,
+  getCustomerByEmail,
   getCustomerByFirebaseId
 } = require("../queries/users");
 
@@ -16,6 +17,20 @@ customers.get("/", async (req, res) => {
     res.status(200).json(customer);
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+customers.get("/:id/email", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const customer = await getCustomerById(id);
+    if (!customer) {
+      res.status(404).json({ error: "Customer not found" });
+    } else {
+      res.status(200).json({ email: customer.email });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 

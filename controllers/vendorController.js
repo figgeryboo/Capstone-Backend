@@ -14,13 +14,21 @@ vendors.get("/", async (req, res) => {
 
   vendors.post("/", async (req, res) => {
     try {
-        const newVendor = await vendorSignUp(req.body);
+        const newVendor = await createVendor(req.body);
         res.status(201).json(newVendor);
     } catch (err) {
         res.status(500).json({ error: err });
     }
 });
 
+vendors.post("/locations", async (req, res) => {
+  try {
+      const newVendorLocation = await (req.body);
+      res.status(201).json(newVendorLocation);
+  } catch (err) {
+      res.status(500).json({ error: err });
+  }
+});
 
 
 vendors.get("/:id", async (req, res) => {

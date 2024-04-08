@@ -36,6 +36,9 @@ const vendorSignUp = async (vendorData) => {
   }
 }
 
+// const vendorPostLocation = async () => {
+
+// }
 
 const getAllVendors = async () => {
   try {
