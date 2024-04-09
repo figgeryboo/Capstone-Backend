@@ -680,4 +680,4 @@ VALUES
 INSERT INTO firebaseUsers(uid, email) VALUES('YEFGFitu9nUVzr7BkUXC3nXYVXZ2', 'mary22@email.com');
 
 
-INSERT INTO firebasevendors(uid, email) VALUES('1sSDT9CSbuWq0Aygp02wp6sN48h1', 'ricktrock@gmail.com');
+INSERT INTO firebaseVendors(uid, email, locations) VALUES('1sSDT9CSbuWq0Aygp02wp6sN48h1', 'ricktrock@gmail.com', '[{"lat": null, "lng": null}]');
