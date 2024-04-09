@@ -46,8 +46,8 @@ CREATE TABLE
 CREATE TABLE
     events (
         order_id SERIAL PRIMARY KEY,
-        customer_id TEXT NOT NULL,
-        vendor_id TEXT NOT NULL,
+        customer_id TEXT,
+        vendor_id TEXT,
         order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         event_date DATE NOT NULL,
         event_time TIME NOT NULL, 
