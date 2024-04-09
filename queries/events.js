@@ -81,28 +81,28 @@ const getEventsByCustomerId = async (customer_id) => {
 const updateEvent = async (id, event) => {
   try {
     const {
-      vendor_id,
-      event_date,
-      event_time,
-      delivery_location,
-      menu_items,
-      event_size,
-      dietary_options,
-      special_instructions,
+      // vendor_id,
+      // event_date,
+      // event_time,
+      // delivery_location,
+      // menu_items,
+      // event_size,
+      // dietary_options,
+      // special_instructions,
       confirmed
     } = event;
 
     const updatedEvent = await db.one(
-      "UPDATE events SET vendor_id = $1, event_date = $2, event_time = $3, delivery_location = $4, menu_items = $5, event_size = $6, dietary_options = $7, special_instructions = $8, confirmed =$9 WHERE order_id = $10 RETURNING *",
+      "UPDATE events SET confirmed =$1 WHERE order_id = $2 RETURNING *",
       [
-        vendor_id,
-        event_date,
-        event_time,
-        delivery_location,
-        menu_items,
-        event_size,
-        dietary_options,
-        special_instructions,
+        // vendor_id,
+        // event_date,
+        // event_time,
+        // delivery_location,
+        // menu_items,
+        // event_size,
+        // dietary_options,
+        // special_instructions,
         confirmed,
         id,
       ]
