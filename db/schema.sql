@@ -47,8 +47,8 @@ CREATE TABLE
     events (
         order_id SERIAL PRIMARY KEY,
         customer_id TEXT,
-        vendor_id TEXT,
-        order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        -- vendor_id TEXT,
+        -- order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         event_date DATE NOT NULL,
         event_time TIME NOT NULL, 
         delivery_location TEXT NOT NULL,
@@ -72,3 +72,5 @@ firebaseVendors (
     email text,
     locations JSON
 );
+
+ALTER TABLE events ADD COLUMN vendor_uid TEXT;

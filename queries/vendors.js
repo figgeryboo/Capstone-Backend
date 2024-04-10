@@ -86,6 +86,15 @@ const getAllVendors = async () => {
   }
 };
 
+const getMenuForVendorById = async (id) => {
+  try {
+    const vendorMenu = await db.oneOrNone("SELECT menu FROM vendors WHERE vendor_id=$1", [id]);
+    return vendorMenu ? vendorMenu.menu : null;
+  } catch (err) {
+    return err;
+  }
+};
+
 const getVendorById = async (id) => {
   try {
     const vendor = await db.oneOrNone(
@@ -158,6 +167,7 @@ module.exports = {
   getVendorById,
   getVendorByuid,
   getAllVendors,
+  getMenuForVendorById,
   updateVendor,
   deleteVendor,
 };
