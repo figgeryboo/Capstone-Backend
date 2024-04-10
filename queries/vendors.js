@@ -88,8 +88,8 @@ const getAllVendors = async () => {
 
 const getMenuForVendorById = async (id) => {
   try {
-    const vendorMenu = await db.oneOrNone("SELECT menu FROM vendors WHERE vendor_id=$1", [id]);
-    return vendorMenu ? vendorMenu.menu : null;
+    const vendorsMenu = await db.any("SELECT menu FROM vendors where vendor_id=$1", [id]);
+    return vendorsMenu;
   } catch (err) {
     return err;
   }

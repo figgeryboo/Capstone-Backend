@@ -600,6 +600,9 @@ INSERT INTO
     events (
         customer_id,
         -- vendor_id,
+        contact_info,
+        customer_name,
+        customer_email,
         event_date,
         event_time,
         delivery_location,
@@ -614,6 +617,9 @@ VALUES
     (
         3,
         -- 1,
+        '212-484-2966',
+        'Sam Boahen',
+        'SBgoated@icloud.com',
         '2024-04-23',
         '10:00:00',
         '350 5th Ave, New York, NY 10118',
@@ -627,6 +633,9 @@ VALUES
     (
         5,
         -- 2,
+        '917-369-2840',
+        'Stef Barros',
+        'Sbarros21@gmail.com',
         '2024-05-15',
         '13:00:00',
         '230 Park Avenue, New York, NY 10017',
@@ -640,6 +649,9 @@ VALUES
     (
         4,
         -- 5,
+        '347-291-9302',
+        'Charlie Pluth',
+        'CPluth@atlantic.com',
         '2024-05-25',
         '13:30:00',
         '228 Madison Ave, New York, NY 10016',
@@ -653,6 +665,9 @@ VALUES
     (
         2,
         -- 5,
+        '929-486-2740',
+        'Jane Austen',
+        'JAusten24@yahoo.com',
         '2024-08-22',
         '13:00:00',
         '2230 White Plains RdBronx, NY 10467',
@@ -666,6 +681,9 @@ VALUES
     (
         7,
         -- 3,
+        '718-624-7630',
+        'Ant Owens',
+        'Aowens728@gmail.com',
         '2024-06-20',
         '18:30:00',
         '3963 Orloff Ave, Bronx, NY 10463',

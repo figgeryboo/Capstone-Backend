@@ -7,7 +7,6 @@ const createCustomer = async (customer) => {
       contact_info,
       customer_image_url,
       dietary_preferences,
-      firebase_id,
     } = customer;
 
     const newCustomer = await db.one(
