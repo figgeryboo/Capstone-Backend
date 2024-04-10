@@ -94,7 +94,7 @@ reviews.post("/vendor/:vendorId", async (req, res) => {
   }
 });
 
-reviews.put("/:ratingId", async (req, res) => {
+reviews.put("/review/:reviewId", async (req, res) => {
   const { ratingId } = req.params;
   const { newRating } = req.body;
   const userId = req.user.id; 
@@ -112,7 +112,7 @@ reviews.put("/:ratingId", async (req, res) => {
   }
 });
 
-reviews.delete("/:ratingId", async (req, res) => {
+reviews.delete("/review/:reviewId", async (req, res) => {
   const { ratingId } = req.params;
   try {
     await deleteRating(ratingId);
