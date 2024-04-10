@@ -112,10 +112,10 @@ reviews.put("/:ratingId", async (req, res) => {
   }
 });
 
-reviews.delete("/:ratingId", async (req, res) => {
-  const { ratingId } = req.params;
+reviews.delete("/:reviewId", async (req, res) => {
+  const { reviewId } = req.params;
   try {
-    await deleteRating(ratingId);
+    await deleteRating(reviewId);
     res.json({ message: "Rating successfully deleted!" });
   } catch (error) {
     console.error("Error deleting rating:", error);

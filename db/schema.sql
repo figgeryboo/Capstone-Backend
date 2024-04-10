@@ -49,6 +49,9 @@ CREATE TABLE
         customer_id TEXT,
         -- vendor_id TEXT,
         -- order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        customer_name text ,
+        customer_email text,
+        contact_info text,
         event_date DATE NOT NULL,
         event_time TIME NOT NULL, 
         delivery_location TEXT NOT NULL,
@@ -56,6 +59,7 @@ CREATE TABLE
         menu_items TEXT NOT NULL,
         event_size INT NOT NULL,
         dietary_options TEXT NOT NULL,
+        needUtensils boolean,
         special_instructions TEXT,
         confirmed boolean
     );

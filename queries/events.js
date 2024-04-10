@@ -4,26 +4,35 @@ const createEvent = async (event) => {
   try {
     const {
       customer_id,
- 
+      customer_name,
+      contact_info,
+      event_date,
       event_time,
       delivery_location,
       budget,
       menu_items,
       event_size,
       dietary_options,
+      needUtensils,
       special_instructions,
+      confirmed
     } = event;
     const newEvent = await db.one(
-      "INSERT INTO events (customer_id, event_time, delivery_location, budget, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
+      "INSERT INTO events (customer_id, customer_name, contact_info, event_date, event_time, delivery_location, budget, menu_items, event_size, dietary_options, needUtensils, special_instructions, confirmed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING *",
       [
         customer_id,
+        customer_name,
+        contact_info,
+        event_date,
         event_time,
         delivery_location,
         budget,
         menu_items,
         event_size,
         dietary_options,
+        needUtensils,
         special_instructions,
+        confirmed
       ]
     );
     return newEvent;
@@ -65,13 +74,15 @@ const getEventsByVendorId = async (vendor_id) => {
 };
 
 const getEventsByCustomerId = async (customer_id) => {
-    try {
-      const events = await db.any("SELECT * FROM events WHERE customer_id = $1", [customer_id]);
-      return events;
-    } catch (err) {
-      return err;
-    }
-  };
+  try {
+    const events = await db.any("SELECT * FROM events WHERE customer_id = $1", [
+      customer_id,
+    ]);
+    return events;
+  } catch (err) {
+    return err;
+  }
+};
 
 const updateEvent = async (id, event) => {
   try {
@@ -85,7 +96,7 @@ const updateEvent = async (id, event) => {
       // dietary_options,
       // special_instructions,
       vendor_uid,
-      confirmed
+      confirmed,
     } = event;
 
     const updatedEvent = await db.one(
