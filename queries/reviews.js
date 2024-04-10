@@ -1,6 +1,6 @@
 const db = require("../db/dbConfig");
 
-const addRating = async (userId, vendorId, reviewText, rating) => {
+const addRating = async ( userId, vendorId, reviewText, rating) => {
   try {
     const newRating = await db.one(
       "INSERT INTO reviews (user_id, vendor_id, review_text, rating) VALUES ($1, $2, $3, $4) RETURNING *",

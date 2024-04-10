@@ -94,7 +94,7 @@ reviews.post("/vendor/:vendorId", async (req, res) => {
   }
 });
 
-reviews.put("/:ratingId", async (req, res) => {
+reviews.put("/review/:reviewId", async (req, res) => {
   const { ratingId } = req.params;
   const { newRating } = req.body;
   const userId = req.user.id; 
@@ -112,10 +112,10 @@ reviews.put("/:ratingId", async (req, res) => {
   }
 });
 
-reviews.delete("/:reviewId", async (req, res) => {
-  const { reviewId } = req.params;
+reviews.delete("/review/:reviewId", async (req, res) => {
+  const { ratingId } = req.params;
   try {
-    await deleteRating(reviewId);
+    await deleteRating(ratingId);
     res.json({ message: "Rating successfully deleted!" });
   } catch (error) {
     console.error("Error deleting rating:", error);
