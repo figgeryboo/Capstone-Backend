@@ -39,7 +39,7 @@ CREATE TABLE
         review_text TEXT,
         rating DECIMAL NOT NULL,
         review_date DATE DEFAULT CURRENT_DATE,
-        CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES customers (customer_id) ON DELETE CASCADE,
+        -- CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES customers (customer_id) ON DELETE CASCADE,
         CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id)
     );
 
