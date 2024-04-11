@@ -60,11 +60,8 @@ const getVendorLocations = async () => {
 
 const updateVendorLocations = async (uid, locations) => {
   try {
-    // Convert locations array to a JSON string
     const locationsString = JSON.stringify(locations);
-    // Create the SQL query with the JSON string of coordinates
     const query = `UPDATE firebaseVendors SET locations = $1 WHERE uid = $2 RETURNING *`;
-    // Execute the query with the UID parameter
     const updatedVendor = await db.one(query, [locationsString, uid]);
     return updatedVendor;
   } catch (err) {
@@ -73,9 +70,14 @@ const updateVendorLocations = async (uid, locations) => {
 };
 
 
-// const vendorPostLocation = async () => {
-
-// }
+const getVendorMetrics = async (id) => {
+  try {
+    const vendorMetric = await db.any("SELECT transaction_metrics FROM vendors where vendor_id=$1",[id]);
+    return vendorMetric;
+  } catch (err) {
+    return err;
+  }
+}
 
 const getAllVendors = async () => {
   try {
@@ -165,6 +167,7 @@ module.exports = {
   updateVendorLocations,
   vendorSignUp,
   getVendorById,
+  getVendorMetrics,
   getVendorByuid,
   getAllVendors,
   getMenuForVendorById,

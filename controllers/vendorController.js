@@ -8,6 +8,7 @@ const {
   vendorSignUp,
   updateVendorLocations,
   getAllVendors,
+  getVendorMetrics,
   getVendorById,
   getMenuForVendorById,
   getVendorByuid,
@@ -57,6 +58,20 @@ vendors.get("/locations/:uid", async (req, res) => {
   }
 });
 
+vendors.get("/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const vendor = await getVendorById(id);
+    if (!vendor) {
+      res.status(404).json({ error: "Vendor not found" });
+    } else {
+      res.status(200).json(vendor);
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 vendors.get('/:id/menu', async (req, res) => {
   try {
     const { id } = req.params;
@@ -71,6 +86,19 @@ vendors.get('/:id/menu', async (req, res) => {
   }
 })
 
+
+vendors.get('/:id/metrics', async (req, res) => {
+  const {id} = req.params;
+
+  try {
+    const vendorMetrics = await getVendorMetrics(id);
+    res.json(vendorMetrics);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 vendors.post("/locations", async (req, res) => {
   try {
     const { uid, locations } = req.body;
@@ -81,19 +109,6 @@ vendors.post("/locations", async (req, res) => {
   }
 });
 
-vendors.get("/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const vendor = await getVendorById(id);
-    if (!vendor) {
-      res.status(404).json({ error: "Vendor not found" });
-    } else {
-      res.status(200).json(vendor);
-    }
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
 
 vendors.put("/:id", async (req, res) => {
   try {
