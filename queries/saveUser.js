@@ -12,10 +12,10 @@ admin.initializeApp({
   databaseURL: fb_db_url,
 });
 
-const fbApp = express.Router();
-fbApp.use(bodyParser.json());
+const firebase = express.Router();
+firebase.use(bodyParser.json());
 
-fbApp.get("/getFirebaseUsers", async (req, res) => {
+firebase.get("/getFirebaseUsers", async (req, res) => {
   try {
     const users = await db.any("SELECT * FROM firebaseUsers");
     res.status(200).json(users);
@@ -25,7 +25,7 @@ fbApp.get("/getFirebaseUsers", async (req, res) => {
   }
 });
 
-fbApp.get("/getFirebaseVendors", async (req, res) => {
+firebase.get("/getFirebaseVendors", async (req, res) => {
   try {
     const vendors = await db.any("SELECT * FROM firebaseVendors");
     res.status(200).json(vendors);
@@ -35,7 +35,7 @@ fbApp.get("/getFirebaseVendors", async (req, res) => {
   }
 });
 
-fbApp.post("/sendAllUsersToPostgres", async (req, res) => {
+firebase.post("/sendAllUsersToPostgres", async (req, res) => {
   try {
     // retrieve from fb
     const listUsersResult = await admin.auth().listUsers();
@@ -57,24 +57,19 @@ fbApp.post("/sendAllUsersToPostgres", async (req, res) => {
   }
 });
 
-fbApp.post("/sendAllVendorsToPostgres", async (req, res) => {
+firebase.post("/sendAllVendorsToPostgres", async (req, res) => {
   try {
-    const listUsersResult = await admin.auth().listUsers();
-    const vendors = listUsersResult.users;
-
-    for (const vendorRecord of vendors) {
-      const { uid, email } = vendorRecord;
-      await db.none("INSERT INTO firebaseVendors(uid, email) VALUES($1, $2)", [
-        uid,
-        email,
-      ]);
-    }
-    console.log("All vendors migrated");
-    res.status(200).json({ message: "All vendors sent to PostgreSQL" });
+    const { uid, email } = req.body; 
+    await db.none("INSERT INTO firebaseVendors(uid, email) VALUES($1, $2)", [
+      uid,
+      email,
+    ]);
+    console.log("Vendor migrated");
+    res.status(200).json({ message: "Vendor sent to PostgreSQL" });
   } catch (error) {
-    console.error("Error sending all vendors to PostgreSQL:", error);
-    res.status(500).json({ error: "Failed to send all vendors to PostgreSQL" });
+    console.error("Error sending vendor to PostgreSQL:", error);
+    res.status(500).json({ error: "Failed to send vendor to PostgreSQL" });
   }
 });
 
-module.exports = fbApp;
+module.exports = firebase;
