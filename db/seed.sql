@@ -14,92 +14,6 @@ INSERT INTO
     )
 VALUES
     (
-        'Vladimir Andanov',
-        'VAndanov@example.com',
-        'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
-        'Dairy, Dairy Free',
-        4.5,
-        '{"💲", "💳", "🧾"}',
-        '[
-            { "name": "Waffle Cones", "description": "Cone with Vanilla or Chocolate", "price": 5.00 },
-            { "name": "Sundaes", "description": "Cone with Vanilla or Chocolate", "price": 8.00 },
-            { "name": "Rainbow Sprinkles", "description": "Cone with Rainbow Sprinkles", "price": 5.00 },
-            { "name": "Strawberry Fruit", "description": "Cone with Strawberry Fruit", "price": 9.00 },
-            { "name": "Chocolate Sprinkles", "description": "Cone with Chocolate Sprinkles", "price": 5.00 },
-            { "name": "Blue Sprinkles", "description": "Cone with Blue Sprinkles", "price": 5.00 },
-            { "name": "Pineapple Fruit", "description": "Cone with Pineapple Fruit", "price": 9.00 },
-            { "name": "Chocolate Syrup", "description": "Cone with Chocolate Syrup", "price": 9.00 },
-            { "name": "Crunchies", "description": "Cone with Crunchies", "price": 6.00 },
-            { "name": "Caramel Syrup", "description": "Cone with Caramel Syrup", "price": 9.00 },
-            { "name": "Cherry Dip", "description": "Cone with Cherry Dip", "price": 6.00 },
-            { "name": "Peanuts", "description": "Cone with Peanuts", "price": 59.00 },
-            { "name": "Chocolate Dip", "description": "Cone with Chocolate Dip", "price": 6.00 },
-            { "name": "Double Cones", "description": "Cone with Vanilla, Chocolate, Half & Half", "price": 58.00 },
-            { "name": "Milk Shakes", "description": "Milk Shakes (1 Size Only 20oz)", "price": 8.00 },
-            { "name": "Dixie Cup", "description": "Cone with Vanilla", "price": 58.00 },
-            { "name": "Shake Floats", "description": "Cone with Shake Floats", "price": 6.00 }
-        ]
-        ',
-        true,
-        '[{"lat": 40.808853, "lng": -73.910856},
-            {"lat": 40.808966, "lng": -73.911215},
-            {"lat": 40.809074, "lng": -73.911558},
-            {"lat": 40.809193, "lng": -73.911954},
-            {"lat": 40.809305, "lng": -73.912365},
-            {"lat": 40.809378, "lng": -73.912597},
-            {"lat": 40.809523, "lng": -73.912976},
-            {"lat": 40.809658, "lng": -73.913277},
-            {"lat": 40.809866, "lng": -73.913349},
-            {"lat": 40.810052, "lng": -73.913467},
-            {"lat": 40.810158, "lng": -73.913713},
-            {"lat": 40.810218, "lng": -73.914173},
-            {"lat": 40.810290, "lng": -73.914570},
-            {"lat": 40.810385, "lng": -73.914994},
-            {"lat": 40.810444, "lng": -73.915124},
-            {"lat": 40.810763, "lng": -73.914950},
-            {"lat": 40.810911, "lng": -73.914875},
-            {"lat": 40.811173, "lng": -73.914722},
-            {"lat": 40.811449, "lng": -73.914561},
-            {"lat": 40.811644, "lng": -73.914440},
-            {"lat": 40.811864, "lng": -73.915105},
-            {"lat": 40.812037, "lng": -73.915634},
-            {"lat": 40.812194, "lng": -73.916109},
-            {"lat": 40.812266, "lng": -73.916333},
-            {"lat": 40.812222, "lng": -73.916497},
-            {"lat": 40.812009, "lng": -73.916622},
-            {"lat": 40.811777, "lng": -73.916750},
-            {"lat": 40.811646, "lng": -73.916807},
-            {"lat": 40.811530, "lng": -73.916422},
-            {"lat": 40.811362, "lng": -73.915908}
-        ]',
-        '[
-            {
-            "period": "yearly",
-            "sales": 300000,
-            "transactions": 15000,
-            "monthly_variation": [
-                {
-                "month": "January",
-                "days": 31,
-                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-                },
-                {
-                "month": "February",
-                "days": 28,
-                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-                },
-                {
-                "month": "March",
-                "days": 31,
-                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
-                }
-            ]}
-        ]'
-    ),
-    (
         'Gabe Mendoza',
         'GMendoza@example.com',
         'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
@@ -745,7 +659,7 @@ INSERT INTO
     )
 VALUES
     (
-        5,
+        4,
         1,
         'Great food and service!',
         4.0,
@@ -773,7 +687,7 @@ VALUES
         '2024-03-14'
     ),
     (
-        1,
+        3,
         6,
         'Awesome flavors. 8th wonder of the world!',
         5.0,
@@ -793,7 +707,13 @@ VALUES
         4.0,
         '2024-03-21'
     ),
-    (7, 5, '💃🏽💃🏽💃🏽', 4.0, '2024-04-21'),
+    (
+        7, 
+        5, 
+        '💃🏽💃🏽💃🏽', 
+        4.0, 
+        '2024-04-21'
+    ),
     (
         4,
         5,
