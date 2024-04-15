@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS wmic_app;
+DROP DATABASE IF EXISTS wmicserver;
 
 CREATE DATABASE wmicserver;
 
