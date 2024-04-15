@@ -100,8 +100,8 @@ VALUES
         ]'
     ),
     (
-        'Gabe Kalovsky',
-        'GKalovsky@example.com',
+        'Gabe Mendoza',
+        'GMendoza@example.com',
         'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
         'Dairy',
         4.0,
@@ -256,7 +256,7 @@ VALUES
                 "month": "March",
                 "days": 31,
                 "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+
                 }
             ]}
         ]'
@@ -679,10 +679,10 @@ INSERT INTO
     )
 VALUES
     (
-        'Dez Paulsen',
-        'SarahPaulsen@gmail.com',
+        'Dez Pacito',
+        'DezPacito@gmail.com',
         '917-200-0800',
-        'https://media.gq.com/photos/57d99b60beed5f275b337d93/1:1/w_1332,h_1332,c_limit/1016-GQ-MAMP01-01-sarah-paulson-3x2.jpg',
+        'https://i.insider.com/60ef1a5561b8600019f17121?width=1136&format=jpeg',
         POINT (40.7128, -74.0060),
         'Non Dairy'
     ),
@@ -706,7 +706,7 @@ VALUES
         'Charlie Pluth',
         'CPluth@atlantic.com',
         '303-493-2860',
-        'https://ew.com/thmb/CzuqmImWpdtbp3oGboraRldRUFs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/charlie-puth-main-publicity-1-elisabeth-caren-2000-4d0eb5096a0c482184ecefff7a773cda.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CNi51AoTgQrUX2Xb4-ZkrM81fSzJ4i3z2yixVh3sUA&s',
         POINT (40.846587, -73.903811),
         'Gluten-free'
     ),
@@ -782,7 +782,7 @@ VALUES
     (
         6,
         4,
-        'Heard the ice cream truck sounds from a mile away. Brings back childhood memories!! Even when it is so cold at night we stopped for ice cream. The owner of the truck was so sweet. He threw sprinkles onto the ice cream cone as a little party trick. It was cute!!',
+        'Heard the ice cream truck sounds from a mile away. Brings back childhood memories!! Even when it is so cold at night we stopped for ice cream. The owner of the truck was so sweet. She threw sprinkles onto the ice cream cone as a little party trick. It was cute!!',
         4.0,
         '2024-03-21'
     ),
@@ -883,7 +883,7 @@ VALUES
         'JAusten24@yahoo.com',
         '2024-08-22',
         '13:00:00',
-        '2230 White Plains RdBronx, NY 10467',
+        '2230 White Plains Rd Bronx, NY 10467',
         '$800',
         'Blueberry Cheesecake Cup, Mint Chocolate Chip Cookie sandwiches, Orange Creamsicle Bars',
         '34',

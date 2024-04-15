@@ -30,7 +30,7 @@ firebase.get("/getFirebaseVendors", async (req, res) => {
     const vendors = await db.any("SELECT * FROM firebaseVendors");
     res.status(200).json(vendors);
   } catch (error) {
-    console.error("Error getting vendorss:", error);
+    console.error("Error getting vendors:", error);
     res.status(500).json({ error: "Failed to get vendors" });
   }
 });
