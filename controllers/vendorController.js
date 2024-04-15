@@ -6,7 +6,6 @@ const {
   getVendorLocations,
   addVendorLocations,
   vendorSignUp,
-  addVendorLocations,
   getAllVendors,
   getVendorMetrics,
   getVendorById,
