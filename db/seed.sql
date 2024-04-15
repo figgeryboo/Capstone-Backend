@@ -1,4 +1,4 @@
-\c wmic_app;
+\c wmicserver;
 INSERT INTO
     vendors (
         vendor_name,
