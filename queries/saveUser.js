@@ -3,8 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const admin = require("firebase-admin");
-const keyPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-const serviceAccount = require(`${keyPath}`)
+const serviceAccount = process.env.GOOGLE_APPLICATION_CREDENTIALS
+console.log(serviceAccount)
 const fb_db_url=process.env.databaseURL
 
 admin.initializeApp({
