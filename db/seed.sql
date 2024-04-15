@@ -805,6 +805,6 @@ VALUES
     (
         '1sSDT9CSbuWq0Aygp02wp6sN48h1',
         'ricktrock@gmail.com',
-        '[{"lat": null, "lng": null}]',
+        '[{"lat": 40.7430153, "lng": -73.9417936}]',
         true
     );
