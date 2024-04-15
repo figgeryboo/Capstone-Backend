@@ -67,14 +67,16 @@ CREATE TABLE
 create table 
 firebaseUsers (
     uid text,
-    email text
+    email text,
+     online BOOLEAN DEFAULT false
 );
 
 create table 
 firebaseVendors (
     uid TEXT PRIMARY KEY,
     email text,
-    locations JSON
+    locations JSON,
+    online boolean default false
 );
 
 ALTER TABLE events ADD COLUMN vendor_uid TEXT;
