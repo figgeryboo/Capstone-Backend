@@ -262,12 +262,12 @@ VALUES
         ]'
     ),
     (
-        'Vandhana Benjamin',
-        'VBenjamin@example.com',
+        'Charles Benjamin',
+        'CVBenjamin@example.com',
         'https://s3-media1.fl.yelpcdn.com/bphoto/AisYoUTirA-pNrUEdA-r7Q/o.jpg',
         'Dairy, Dairy Free, Gluten Free',
         3.8,
-        '{"cash 💲", "credit card 💳", "bitcoin ₿", "online payment 🧾"}',
+        '{"💲", "💳", "₿", "🧾"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
              { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -917,10 +917,11 @@ VALUES
     );
 
 INSERT INTO
-    firebaseVendors (uid, email, locations)
+    firebaseVendors (uid, email, locations, online)
 VALUES
     (
         '1sSDT9CSbuWq0Aygp02wp6sN48h1',
         'ricktrock@gmail.com',
-        '[{"lat": null, "lng": null}]'
+        '[{"lat": null, "lng": null}]',
+        true
     );
