@@ -4,8 +4,8 @@ const createEvent = async (event) => {
   try {
     const {
       customer_id,
-      vendor_id,
-      order_time,
+      customer_name,
+      contact_info,
       event_date,
       event_time,
       delivery_location,
@@ -13,14 +13,16 @@ const createEvent = async (event) => {
       menu_items,
       event_size,
       dietary_options,
+      needUtensils,
       special_instructions,
+      confirmed
     } = event;
     const newEvent = await db.one(
-      "INSERT INTO events (customer_id, vendor_id, order_time, event_date, event_time, delivery_location, budget, menu_items, event_size, dietary_options, special_instructions) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING *",
+      "INSERT INTO events (customer_id, customer_name, contact_info, event_date, event_time, delivery_location, budget, menu_items, event_size, dietary_options, needUtensils, special_instructions, confirmed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING *",
       [
         customer_id,
-        vendor_id,
-        order_time,
+        customer_name,
+        contact_info,
         event_date,
         event_time,
         delivery_location,
@@ -28,7 +30,9 @@ const createEvent = async (event) => {
         menu_items,
         event_size,
         dietary_options,
+        needUtensils,
         special_instructions,
+        confirmed
       ]
     );
     return newEvent;
@@ -70,40 +74,44 @@ const getEventsByVendorId = async (vendor_id) => {
 };
 
 const getEventsByCustomerId = async (customer_id) => {
-    try {
-      const events = await db.any("SELECT * FROM events WHERE customer_id = $1", [customer_id]);
-      return events;
-    } catch (err) {
-      return err;
-    }
-  };
+  try {
+    const events = await db.any("SELECT * FROM events WHERE customer_id = $1", [
+      customer_id,
+    ]);
+    return events;
+  } catch (err) {
+    return err;
+  }
+};
 
 const updateEvent = async (id, event) => {
   try {
     const {
-      vendor_id,
-      event_date,
-      event_time,
-      delivery_location,
-      menu_items,
-      event_size,
-      dietary_options,
-      special_instructions,
-      confirmed
+      // vendor_id,
+      // event_date,
+      // event_time,
+      // delivery_location,
+      // menu_items,
+      // event_size,
+      // dietary_options,
+      // special_instructions,
+      vendor_uid,
+      confirmed,
     } = event;
 
     const updatedEvent = await db.one(
-      "UPDATE events SET vendor_id = $1, event_date = $2, event_time = $3, delivery_location = $4, menu_items = $5, event_size = $6, dietary_options = $7, special_instructions = $8, confirmed =$9 WHERE order_id = $10 RETURNING *",
+      "UPDATE events SET confirmed =$1, vendor_uid =$2 WHERE order_id = $3 RETURNING *",
       [
-        vendor_id,
-        event_date,
-        event_time,
-        delivery_location,
-        menu_items,
-        event_size,
-        dietary_options,
-        special_instructions,
+        // vendor_id,
+        // event_date,
+        // event_time,
+        // delivery_location,
+        // menu_items,
+        // event_size,
+        // dietary_options,
+        // special_instructions,
         confirmed,
+        vendor_uid,
         id,
       ]
     );

@@ -34,11 +34,50 @@ const vendorSignUp = async (vendorData) => {
   } catch (err) {
     return err;
   }
+};
+
+const addVendorLocations = async (uid, locations) => {
+  try {
+    const newVendor = await db.one(
+      "INSERT into firebaseVendors (uid, locations) VALUES ($1, $2) RETURNING *", [uid, JSON.stringify(locations)]
+    );
+    return newVendor;
+  } catch (err) {
+    return err;
+  }
+};
+
+const getVendorLocations = async () => {
+  try {
+    const vendorLocations = await db.any(
+      "SELECT uid, locations FROM firebaseVendors"
+    );
+    return vendorLocations;
+  } catch (err) {
+    return err;
+  }
+};
+
+const updateVendorLocations = async (uid, locations) => {
+  try {
+    const locationsString = JSON.stringify(locations);
+    const query = `UPDATE firebaseVendors SET locations = $1 WHERE uid = $2 RETURNING *`;
+    const updatedVendor = await db.one(query, [locationsString, uid]);
+    return updatedVendor;
+  } catch (err) {
+    throw err;
+  }
+};
+
+
+const getVendorMetrics = async (id) => {
+  try {
+    const vendorMetric = await db.any("SELECT transaction_metrics FROM vendors where vendor_id=$1",[id]);
+    return vendorMetric;
+  } catch (err) {
+    return err;
+  }
 }
-
-// const vendorPostLocation = async () => {
-
-// }
 
 const getAllVendors = async () => {
   try {
@@ -49,11 +88,32 @@ const getAllVendors = async () => {
   }
 };
 
+const getMenuForVendorById = async (id) => {
+  try {
+    const vendorsMenu = await db.any("SELECT menu FROM vendors where vendor_id=$1", [id]);
+    return vendorsMenu;
+  } catch (err) {
+    return err;
+  }
+};
+
 const getVendorById = async (id) => {
   try {
     const vendor = await db.oneOrNone(
       "SELECT * FROM vendors WHERE vendor_id = $1",
       [id]
+    );
+    return vendor;
+  } catch (err) {
+    return err;
+  }
+};
+
+const getVendorByuid = async (uid) => {
+  try {
+    const vendor = await db.oneOrNone(
+      "SELECT * FROM firebaseVendors WHERE uid = $1",
+      [uid]
     );
     return vendor;
   } catch (err) {
@@ -102,9 +162,15 @@ const deleteVendor = async (id) => {
 };
 module.exports = {
   createVendor,
+  getVendorLocations,
+  addVendorLocations,
+  updateVendorLocations,
   vendorSignUp,
   getVendorById,
+  getVendorMetrics,
+  getVendorByuid,
   getAllVendors,
+  getMenuForVendorById,
   updateVendor,
   deleteVendor,
 };

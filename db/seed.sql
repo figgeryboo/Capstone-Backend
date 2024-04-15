@@ -16,123 +16,258 @@ VALUES
     (
         'Vladimir Andanov',
         'VAndanov@example.com',
-        'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
+        'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
         'Dairy, Dairy Free',
         4.5,
-        '{"cash 💲", "credit card 💳", "online payment 🧾"}',
+        '{"💲", "💳", "🧾"}',
         '[
-             { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
-                { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
-                { "name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99 },
-                { "name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 3.99 },
-                { "name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
-                { "name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99 },
-                { "name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 3.49 },
-                { "name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99 },
-                { "name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49 }
-        ]',
+            { "name": "Waffle Cones", "description": "Cone with Vanilla or Chocolate", "price": 5.00 },
+            { "name": "Sundaes", "description": "Cone with Vanilla or Chocolate", "price": 8.00 },
+            { "name": "Rainbow Sprinkles", "description": "Cone with Rainbow Sprinkles", "price": 5.00 },
+            { "name": "Strawberry Fruit", "description": "Cone with Strawberry Fruit", "price": 9.00 },
+            { "name": "Chocolate Sprinkles", "description": "Cone with Chocolate Sprinkles", "price": 5.00 },
+            { "name": "Blue Sprinkles", "description": "Cone with Blue Sprinkles", "price": 5.00 },
+            { "name": "Pineapple Fruit", "description": "Cone with Pineapple Fruit", "price": 9.00 },
+            { "name": "Chocolate Syrup", "description": "Cone with Chocolate Syrup", "price": 9.00 },
+            { "name": "Crunchies", "description": "Cone with Crunchies", "price": 6.00 },
+            { "name": "Caramel Syrup", "description": "Cone with Caramel Syrup", "price": 9.00 },
+            { "name": "Cherry Dip", "description": "Cone with Cherry Dip", "price": 6.00 },
+            { "name": "Peanuts", "description": "Cone with Peanuts", "price": 59.00 },
+            { "name": "Chocolate Dip", "description": "Cone with Chocolate Dip", "price": 6.00 },
+            { "name": "Double Cones", "description": "Cone with Vanilla, Chocolate, Half & Half", "price": 58.00 },
+            { "name": "Milk Shakes", "description": "Milk Shakes (1 Size Only 20oz)", "price": 8.00 },
+            { "name": "Dixie Cup", "description": "Cone with Vanilla", "price": 58.00 },
+            { "name": "Shake Floats", "description": "Cone with Shake Floats", "price": 6.00 }
+        ]
+        ',
         true,
-        '[
-            {"lat": 40.746661, "lng": -73.997724},
-            {"lat": 40.746968, "lng": -73.998487},
-            {"lat": 40.747336, "lng": -73.999351},
-            {"lat": 40.747663, "lng": -74.000121},
-            {"lat": 40.747847, "lng": -74.000553},
-            {"lat": 40.748175, "lng": -74.001336},
-            {"lat": 40.748482, "lng": -74.002092},
-            {"lat": 40.748758, "lng": -74.002734},
-            {"lat": 40.748998, "lng": -74.003247},
-            {"lat": 40.749156, "lng": -74.003633},
-            {"lat": 40.749255, "lng": -74.003887},
-            {"lat": 40.749315, "lng": -74.004031},
-            {"lat": 40.749420, "lng": -74.004278},
-            {"lat": 40.749565, "lng": -74.004632},
-            {"lat": 40.749671, "lng": -74.004882},
-            {"lat": 40.749766, "lng": -74.005102},
-            {"lat": 40.749876, "lng": -74.005363},
-            {"lat": 40.749971, "lng": -74.005586},
-            {"lat": 40.750031, "lng": -74.005738},
-            {"lat": 40.750106, "lng": -74.005916},
-            {"lat": 40.750196, "lng": -74.006115},
-            {"lat": 40.750083, "lng": -74.006269},
-            {"lat": 40.749984, "lng": -74.006344},
-            {"lat": 40.749851, "lng": -74.006447},
-            {"lat": 40.749771, "lng": -74.006508},
-            {"lat": 40.749622, "lng": -74.006617},
-            {"lat": 40.749685, "lng": -74.006748},
-            {"lat": 40.749763, "lng": -74.006926},
-            {"lat": 40.749846, "lng": -74.007124},
-            {"lat": 40.749903, "lng": -74.007264},
-            {"lat": 40.749988, "lng": -74.007470},
-            {"lat": 40.750053, "lng": -74.007627},
-            {"lat": 40.750135, "lng": -74.007822},
-            {"lat": 40.750202, "lng": -74.007986},
-            {"lat": 40.750249, "lng": -74.008140},
-            {"lat": 40.750291, "lng": -74.008281},
-            {"lat": 40.750435, "lng": -74.008257},
-            {"lat": 40.750492, "lng": -74.008238},
-            {"lat": 40.750533, "lng": -74.008222},
-            {"lat": 40.750772, "lng": -74.008112},
-            {"lat": 40.751082, "lng": -74.008009},
-            {"lat": 40.751334, "lng": -74.007906},
-            {"lat": 40.751624, "lng": -74.007817},
-            {"lat": 40.751802, "lng": -74.007736},
-            {"lat": 40.752115, "lng": -74.007611},
-            {"lat": 40.752373, "lng": -74.007505},
-            {"lat": 40.752502, "lng": -74.007472},
-            {"lat": 40.752727, "lng": -74.007382},
-            {"lat": 40.752947, "lng": -74.007293},
-            {"lat": 40.753098, "lng": -74.007224},
-            {"lat": 40.752944, "lng": -74.006894},
-            {"lat": 40.752778, "lng": -74.006486},
-            {"lat": 40.752663, "lng": -74.006217},
-            {"lat": 40.752535, "lng": -74.005910},
-            {"lat": 40.752447, "lng": -74.005703},
-            {"lat": 40.752354, "lng": -74.005475},
-            {"lat": 40.752267, "lng": -74.005268},
-            {"lat": 40.752176, "lng": -74.005061},
-            {"lat": 40.752089, "lng": -74.004843},
-            {"lat": 40.751940, "lng": -74.004496},
-            {"lat": 40.751726, "lng": -74.004009},
-            {"lat": 40.751519, "lng": -74.003493},
-            {"lat": 40.751293, "lng": -74.002953},
-            {"lat": 40.751003, "lng": -74.002269},
-            {"lat": 40.750655, "lng": -74.001536}
+        '[{"lat": 40.808853, "lng": -73.910856},
+            {"lat": 40.808966, "lng": -73.911215},
+            {"lat": 40.809074, "lng": -73.911558},
+            {"lat": 40.809193, "lng": -73.911954},
+            {"lat": 40.809305, "lng": -73.912365},
+            {"lat": 40.809378, "lng": -73.912597},
+            {"lat": 40.809523, "lng": -73.912976},
+            {"lat": 40.809658, "lng": -73.913277},
+            {"lat": 40.809866, "lng": -73.913349},
+            {"lat": 40.810052, "lng": -73.913467},
+            {"lat": 40.810158, "lng": -73.913713},
+            {"lat": 40.810218, "lng": -73.914173},
+            {"lat": 40.810290, "lng": -73.914570},
+            {"lat": 40.810385, "lng": -73.914994},
+            {"lat": 40.810444, "lng": -73.915124},
+            {"lat": 40.810763, "lng": -73.914950},
+            {"lat": 40.810911, "lng": -73.914875},
+            {"lat": 40.811173, "lng": -73.914722},
+            {"lat": 40.811449, "lng": -73.914561},
+            {"lat": 40.811644, "lng": -73.914440},
+            {"lat": 40.811864, "lng": -73.915105},
+            {"lat": 40.812037, "lng": -73.915634},
+            {"lat": 40.812194, "lng": -73.916109},
+            {"lat": 40.812266, "lng": -73.916333},
+            {"lat": 40.812222, "lng": -73.916497},
+            {"lat": 40.812009, "lng": -73.916622},
+            {"lat": 40.811777, "lng": -73.916750},
+            {"lat": 40.811646, "lng": -73.916807},
+            {"lat": 40.811530, "lng": -73.916422},
+            {"lat": 40.811362, "lng": -73.915908}
         ]',
         '[
             {
-                "period": "daily",
-                "sales": {
-                    "Mon": 750, "Tue": 750, "Wed": 750, "Thu": 750, "Fri": 750, "Sat": 750, "Sun": 750
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
                 },
-                "transactions": {
-                    "Mon": 250, "Tue": 250, "Wed": 250, "Thu": 250, "Fri": 250, "Sat": 250, "Sun": 250
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
-            },
-            {
-                "period": "weekly",
-                "sales": 5250,
-                "transactions": 1750
-            },
-            {
-                "period": "monthly",
-                "sales": 21000,
-                "transactions": 7000
-            },
-            {
-                "period": "yearly",
-                "sales": 252000,
-                "transactions": 84000
-            }
+            ]}
         ]'
     ),
     (
-        'Vandhana Benjamin',
-        'VBenjamin@example.com',
-        'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
+        'Gabe Kalovsky',
+        'GKalovsky@example.com',
+        'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
+        'Dairy',
+        4.0,
+        '{"💲", "💳"}',
+        '[
+             { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
+             { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
+             { "name": "Orange Creamsicle Bar (Creamsicle)", "description": "Orange creamsicle bar with a creamy filling", "price": 3.99 },
+             { "name": "Caramel Sundae", "description": "Caramel ice cream with caramel syrup and whipped cream", "price": 4.99 },
+             { "name": "Blueberry Cheesecake Cup", "description": "Blueberry cheesecake ice cream in a cup", "price": 3.49 },
+             { "name": "Coffee Float", "description": "Cold brew coffee with vanilla ice cream", "price": 4.99 },
+             { "name": "Pineapple Dole Whip Cup", "description": "Refreshing pineapple dole whip in a cup", "price": 3.99 }
+        ]',
+        true,
+        '[
+            {
+            "lat": 40.755040,
+            "lng": -74.002559
+            },
+            {
+            "lat": 40.754451,
+            "lng": -74.002892
+            },
+            {
+            "lat": 40.753536,
+            "lng": -74.003568
+            }
+        ]',
+        '[
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+                }
+            ]}
+        ]'
+    ),
+    (
+        'Zeus Network',
+        'NetworkZeus48@email.com',
+        'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
+        'Dairy, Vegan',
+        3.5,
+        '{"💲", "💳"}',
+        '[
+            {
+            "name": "Mint Chocolate Chip Ice Cream Cone",
+            "description": "Refreshing mint ice cream with chocolate chips in a cone",
+            "price": 3.99
+            },
+            {
+            "name": "Strawberry Shortcake Bar",
+            "description": "Strawberry shortcake bar with a creamy filling",
+            "price": 4.99
+            },
+            {
+            "name": "Cookies and Cream Cup",
+            "description": "Creamy vanilla ice cream with chocolate cookie pieces in a cup",
+            "price": 5.49
+            },
+            {
+            "name": "Mango Sorbet Cup",
+            "description": "Sweet and tangy mango sorbet in a cup",
+            "price": 4.49
+            } 
+        ]',
+        false,
+        '[
+            {
+            "lat": 40.735874,
+            "lng": -73.955312
+            },
+            {
+            "lat": 40.735807,
+            "lng":  -73.955946
+            },
+            {
+            "lat": 40.735738,
+            "lng": -73.956710
+            },
+            { "lat": 40.735683,
+             "lng": -73.957464
+             },
+            { "lat": 40.735598, 
+            "lng": -73.958193
+             },
+            {"lat": 40.735578,
+             "lng":  -73.958456
+             },
+               {"lat": 40.735580, 
+             "lng": -73.958494
+             },
+               {"lat": 40.735804, 
+             "lng": -73.958534
+             },
+               {"lat": 40.736033, 
+             "lng": -73.958572
+             },
+               {"lat": 40.736140, 
+             "lng": -73.958601
+             },
+               {"lat": 40.736195,
+             "lng":  -73.958669
+             },
+               {"lat": 40.736133, 
+             "lng": -73.958870
+             },
+               {"lat": 40.735970, 
+             "lng": -73.959169
+             },  
+             {"lat": 40.735768, 
+             "lng": -73.959531
+             }
+        ]',
+        '[
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+                }
+            ]}
+        ]'
+    ),
+    (
+        'Charles Benjamin',
+        'CVBenjamin@example.com',
+        'https://s3-media1.fl.yelpcdn.com/bphoto/AisYoUTirA-pNrUEdA-r7Q/o.jpg',
         'Dairy, Dairy Free, Gluten Free',
         3.8,
-        '{"cash 💲", "credit card 💳", "bitcoin ₿", "online payment 🧾"}',
+        '{"💲", "💳", "₿", "🧾"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
              { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -204,100 +339,117 @@ VALUES
             {"lat": 40.735512, "lng": -73.975313}
         ]',
         '[
-            {
-                "period": "daily",
-                "sales": {
-                    "Mon": 300, "Tue": 275, "Wed": 320, "Thu": 310, "Fri": 330, "Sat": 290, "Sun": 295
+             {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
                 },
-                "transactions": {
-                    "Mon": 30, "Tue": 27, "Wed": 32, "Thu": 31, "Fri": 33, "Sat": 29, "Sun": 29
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
-            },
-            {
-                "period": "weekly",
-                "sales": 1930,
-                "transactions": 211
-            },
-            {
-                "period": "monthly",
-                "sales": 7720,
-                "transactions": 903
-            },
-            {
-                "period": "yearly",
-                "sales": 92640,
-                "transactions": 10836
-            }
+            ]}
         ]'
     ),
     (
-        'Dolores Madrigal',
-        'DMadrigal28@example.com',
-        'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
+        'Ahmad Fun Time',
+        'Ahmad931@example.com',
+        'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
         'Dairy, Dairy Free, Gluten Free',
-        4.2,
-        '{"cash 💲", "online payment 🧾"}',
+        4.5,
+        '{"💲", "💳", "🧾"}',
         '[
-            { "name": "Fruit Sorbet Cup", "description": "Assorted fruit flavors in a refreshing sorbet", "price": 3.99 },
-            { "name": "Mango Tango Popsicle", "description": "Tropical mango flavor in a fun popsicle", "price": 2.49 },
-            { "name": "Double Chocolate Chip Cone", "description": "Double chocolate chip ice cream in a cone", "price": 4.49 }
+             { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
+                { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
+                { "name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99 },
+                { "name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 3.99 },
+                { "name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
+                { "name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99 },
+                { "name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 3.49 },
+                { "name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99 },
+                { "name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49 }
         ]',
         true,
-        '[{"lat": 40.808853, "lng": -73.910856},
-            {"lat": 40.808966, "lng": -73.911215},
-            {"lat": 40.809074, "lng": -73.911558},
-            {"lat": 40.809193, "lng": -73.911954},
-            {"lat": 40.809305, "lng": -73.912365},
-            {"lat": 40.809378, "lng": -73.912597},
-            {"lat": 40.809523, "lng": -73.912976},
-            {"lat": 40.809658, "lng": -73.913277},
-            {"lat": 40.809866, "lng": -73.913349},
-            {"lat": 40.810052, "lng": -73.913467},
-            {"lat": 40.810158, "lng": -73.913713},
-            {"lat": 40.810218, "lng": -73.914173},
-            {"lat": 40.810290, "lng": -73.914570},
-            {"lat": 40.810385, "lng": -73.914994},
-            {"lat": 40.810444, "lng": -73.915124},
-            {"lat": 40.810763, "lng": -73.914950},
-            {"lat": 40.810911, "lng": -73.914875},
-            {"lat": 40.811173, "lng": -73.914722},
-            {"lat": 40.811449, "lng": -73.914561},
-            {"lat": 40.811644, "lng": -73.914440},
-            {"lat": 40.811864, "lng": -73.915105},
-            {"lat": 40.812037, "lng": -73.915634},
-            {"lat": 40.812194, "lng": -73.916109},
-            {"lat": 40.812266, "lng": -73.916333},
-            {"lat": 40.812222, "lng": -73.916497},
-            {"lat": 40.812009, "lng": -73.916622},
-            {"lat": 40.811777, "lng": -73.916750},
-            {"lat": 40.811646, "lng": -73.916807},
-            {"lat": 40.811530, "lng": -73.916422},
-            {"lat": 40.811362, "lng": -73.915908}
+        '[
+            {"lat": 40.746661, "lng": -73.997724},
+            {"lat": 40.746968, "lng": -73.998487},
+            {"lat": 40.747336, "lng": -73.999351},
+            {"lat": 40.747663, "lng": -74.000121},
+            {"lat": 40.747847, "lng": -74.000553},
+            {"lat": 40.748175, "lng": -74.001336},
+            {"lat": 40.748482, "lng": -74.002092},
+            {"lat": 40.748758, "lng": -74.002734},
+            {"lat": 40.748998, "lng": -74.003247},
+            {"lat": 40.749156, "lng": -74.003633},
+            {"lat": 40.749255, "lng": -74.003887},
+            {"lat": 40.749315, "lng": -74.004031},
+            {"lat": 40.749420, "lng": -74.004278},
+            {"lat": 40.749565, "lng": -74.004632},
+            {"lat": 40.749671, "lng": -74.004882},
+            {"lat": 40.749766, "lng": -74.005102},
+            {"lat": 40.749876, "lng": -74.005363},
+            {"lat": 40.749971, "lng": -74.005586},
+            {"lat": 40.750031, "lng": -74.005738},
+            {"lat": 40.750106, "lng": -74.005916},
+            {"lat": 40.750196, "lng": -74.006115},
+            {"lat": 40.750083, "lng": -74.006269},
+            {"lat": 40.749984, "lng": -74.006344},
+            {"lat": 40.749851, "lng": -74.006447},
+            {"lat": 40.749771, "lng": -74.006508},
+            {"lat": 40.749622, "lng": -74.006617},
+            {"lat": 40.749452, "lng": -74.006620},
+            {"lat": 40.749301, "lng": -74.006726},
+            {"lat": 40.749144, "lng": -74.006835},
+            {"lat": 40.749022, "lng": -74.006916},
+            {"lat": 40.748893, "lng": -74.006935},
+            {"lat": 40.748801, "lng": -74.006834},
+            {"lat": 40.748689, "lng": -74.006557},
+            {"lat": 40.748577, "lng": -74.006307},
+            {"lat": 40.748415, "lng": -74.005925},
+            {"lat": 40.748174, "lng": -74.005369},
+            {"lat": 40.747893, "lng": -74.004737},
+            {"lat": 40.747823, "lng": -74.004504},
+            {"lat": 40.747705, "lng": -74.004252}
         ]',
-        '[{
-                "period": "daily",
-                "sales": {
-                    "Mon": 160, "Tue": 170, "Wed": 180, "Thu": 190, "Fri": 200, "Sat": 190, "Sun": 160
+        '[
+             {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
                 },
-                "transactions": {
-                    "Mon": 20, "Tue": 22, "Wed": 24, "Thu": 26, "Fri": 28, "Sat": 26, "Sun": 22
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
-            },
-            {
-                "period": "weekly",
-                "sales": 1070,
-                "transactions": 142
-            },
-            {
-                "period": "monthly",
-                "sales": 4280,
-                "transactions": 568
-            },
-            {
-                "period": "yearly",
-                "sales": 51360,
-                "transactions": 6816
-            }
+            ]}
         ]'
     ),
     (
@@ -306,7 +458,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         4.5,
-        '{"cash 💲", "credit card 💳", "bitcoin ₿", "online payment"}',
+        '{"💲", " 💳", "₿", "🧾"}',
         '[
            { "name": "Strawberry Ice Cream Cone", "description": "Fresh strawberry ice cream in a cone", "price": 3.99 },
             { "name": "Oreo Cookie Sandwich (Oreo Ice Cream Sandwich)", "description": "Classic Oreo cookies with vanilla ice cream", "price": 4.49 },
@@ -360,30 +512,82 @@ VALUES
             {"lat": 40.759369, "lng": -73.996828},
             {"lat": 40.759466, "lng": -73.997058}
          ]',
-        '[{
-                "period": "daily",
-                "sales": {
-                    "Mon": 800, "Tue": 850, "Wed": 900, "Thu": 950, "Fri": 1000, "Sat": 950, "Sun": 800
+        '[
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
                 },
-                "transactions": {
-                    "Mon": 40, "Tue": 42, "Wed": 44, "Thu": 46, "Fri": 48, "Sat": 46, "Sun": 40
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
-            },
+            ]}
+        ]'
+    ),
+    (
+        'Nice Cream Truck',
+        'nicecream@example.com',
+        'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
+        'Dairy Free, Gluten Free',
+        4.0,
+        '{"💲", " 💳", "🧾"}',
+        '[
+            { "name": "Unicorn Dream Cone", "description": "Colorful swirls of cotton candy and bubblegum ice cream in a cone", "price": 4.99 },
+            { "name": "Mint Chocolate Brownie Sundae", "description": "Mint chocolate chip ice cream with chunks of brownie, hot fudge, and whipped cream", "price": 6.49 },
+            { "name": "Peanut Butter Blast Cone", "description": "Creamy peanut butter ice cream with chocolate swirls in a cone", "price": 5.79 },
+            { "name": "Red Velvet Cupcake Ice Cream", "description": "Red velvet cake flavored ice cream with cream cheese frosting swirls", "price": 6.99 },
+            { "name": "Smores Bar", "description": "Graham cracker crust with marshmallow and chocolate ice cream dipped in chocolate", "price": 4.99 },
+            { "name": "Coffee Toffee Crunch Cup", "description": "Coffee flavored ice cream with toffee pieces in a cup", "price": 4.49 },
+            { "name": "Cotton Candy Cloud Cone", "description": "Cotton candy flavored ice cream with rainbow sprinkles in a cone", "price": 4.99 },
+            { "name": "Choco Taco", "description": "Waffle cone taco shell filled with vanilla ice cream, fudge swirl, and peanuts, dipped in chocolate", "price": 4.49 }
+        ]',
+        true,
+        '[
+            { "lat": 40.742017, "lng": -74.028364 },
+            { "lat": 40.741894, "lng": -74.027658 },
+            { "lat": 40.741763, "lng": -74.026860 },
+            { "lat": 40.741896, "lng": -74.026481 }
+        ]',
+        '[ 
             {
-                "period": "weekly",
-                "sales": 5620,
-                "transactions": 298
-            },
-            {
-                "period": "monthly",
-                "sales": 22480,
-                "transactions": 1192
-            },
-            {
-                "period": "yearly",
-                "sales": 269760,
-                "transactions": 14304
-            }
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+                }
+            ]}
         ]'
     ),
     (
@@ -391,8 +595,8 @@ VALUES
         '515-758-6390',
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Vegan',
-        4.5,
-        '{"cash 💲", "credit card 💳", "Online Payments 🧾"}',
+        0.0,
+        '{"💲", "💳", "🧾"}',
         '[
             { "name": "Vegan Chocolate Ice Cream", "description": "Rich chocolate ice cream made with almond milk", "price": 4.99 },
             { "name": "Vegan Vanilla Ice Cream", "description": "Creamy vanilla ice cream made with coconut milk", "price": 4.99 },
@@ -436,30 +640,31 @@ VALUES
             {"lat": 40.736953, "lng": -73.990446},
             {"lat": 40.736903, "lng": -73.990485}
         ]',
-        '[{
-                "period": "daily",
-                "sales": {
-                    "Mon": 60, "Tue": 65, "Wed": 70, "Thu": 75, "Fri": 80, "Sat": 85, "Sun": 90
+        '[ 
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
                 },
-                "transactions": {
-                    "Mon": 55, "Tue": 57, "Wed": 59, "Thu": 61, "Fri": 63, "Sat": 65, "Sun": 67
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
-            },
-            {
-                "period": "weekly",
-                "sales": 262.5,
-                "transactions": 85
-            },
-            {
-                "period": "monthly",
-                "sales": 1050,
-                "transactions": 340
-            },
-            {
-                "period": "yearly",
-                "sales": 12600,
-                "transactions": 4080
-            }
+            ]}
         ]'
     );
 
@@ -474,10 +679,10 @@ INSERT INTO
     )
 VALUES
     (
-        'Sarah Paulsen',
+        'Dez Paulsen',
         'SarahPaulsen@gmail.com',
         '917-200-0800',
-        'https://example.com/customer1.jpg',
+        'https://media.gq.com/photos/57d99b60beed5f275b337d93/1:1/w_1332,h_1332,c_limit/1016-GQ-MAMP01-01-sarah-paulson-3x2.jpg',
         POINT (40.7128, -74.0060),
         'Non Dairy'
     ),
@@ -485,7 +690,7 @@ VALUES
         'Jane Austen',
         'JAusten24@yahoo.com',
         '404-191-1201',
-        'https://example.com/customer2.jpg',
+        'https://ichef.bbci.co.uk/images/ic/1200x675/p01h675n.jpg',
         POINT (40.793522, -73.932437),
         'Vegan'
     ),
@@ -493,7 +698,7 @@ VALUES
         'Sam Boahen',
         'SBgoated@icloud.com',
         '252-222-2022',
-        'https://example.com/customer3.jpg',
+        'https://ca.slack-edge.com/TCVA3PF24-U04QV0UA1PY-cb148d3f560e-512',
         POINT (40.793422, -73.932837),
         'None'
     ),
@@ -501,7 +706,7 @@ VALUES
         'Charlie Pluth',
         'CPluth@atlantic.com',
         '303-493-2860',
-        'https://example.com/customer4.jpg',
+        'https://ew.com/thmb/CzuqmImWpdtbp3oGboraRldRUFs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/charlie-puth-main-publicity-1-elisabeth-caren-2000-4d0eb5096a0c482184ecefff7a773cda.jpg',
         POINT (40.846587, -73.903811),
         'Gluten-free'
     ),
@@ -509,7 +714,7 @@ VALUES
         'Stef Barros',
         'Sbarros21@gmail.com',
         '201-555-4432',
-        'https://example.com/customer5.jpg',
+        'https://ca.slack-edge.com/TCVA3PF24-U04RGQ8FUAE-6b43d7693f48-512',
         POINT (40.759959, -73.992032),
         'Non-Dairy'
     ),
@@ -517,7 +722,7 @@ VALUES
         'Ash Ketchum',
         'GPT@pokemon.com',
         '404-529-5555',
-        'https://example.com/customer6.jpg',
+        'https://www.serebii.net/anime/pictures/xy/804/DP182.jpg',
         POINT (40.747999, -73.996346),
         'None'
     ),
@@ -525,7 +730,7 @@ VALUES
         'Ant Owens',
         'Aowens728@gmail.com',
         '707-497-6320',
-        'https://example.com/customer7.jpg',
+        'https://ca.slack-edge.com/TCVA3PF24-U04SNRQU3T8-5d0bd2d6abec-512',
         POINT (40.731722, -73.998703),
         'Non Dairy'
     );
@@ -540,7 +745,7 @@ INSERT INTO
     )
 VALUES
     (
-        1,
+        5,
         1,
         'Great food and service!',
         4.0,
@@ -568,8 +773,8 @@ VALUES
         '2024-03-14'
     ),
     (
-        5,
-        2,
+        1,
+        6,
         'Awesome flavors. 8th wonder of the world!',
         5.0,
         '2024-03-18'
@@ -583,23 +788,34 @@ VALUES
     ),
     (
         5,
-        4,
+        7,
         'Loved the customer service. Will be back!!',
         4.0,
         '2024-03-21'
     ),
+    (7, 5, '💃🏽💃🏽💃🏽', 4.0, '2024-04-21'),
+    (
+        4,
+        5,
+        'AMAZING!!! Great find on this cloudy day and I was craving a cone!! Luckily, WMIC connected me at just the right time  👏🏽',
+        5.0,
+        '2024-04-12'
+    ),
     (
         6,
         1,
-        'There were limited flavors so I had to settle for a vanilla cone! Nonetheless, good service.',
-        3.5,
-        '2024-03-18'
+        'Shooketh. S/O to WMIC with the plug',
+        4.5,
+        '2024-04-18'
     );
 
 INSERT INTO
     events (
         customer_id,
-        vendor_id,
+        -- vendor_id,
+        contact_info,
+        customer_name,
+        customer_email,
         event_date,
         event_time,
         delivery_location,
@@ -613,7 +829,10 @@ INSERT INTO
 VALUES
     (
         3,
-        1,
+        -- 1,
+        '212-484-2966',
+        'Sam Boahen',
+        'SBgoated@icloud.com',
         '2024-04-23',
         '10:00:00',
         '350 5th Ave, New York, NY 10118',
@@ -626,7 +845,10 @@ VALUES
     ),
     (
         5,
-        2,
+        -- 2,
+        '917-369-2840',
+        'Stef Barros',
+        'Sbarros21@gmail.com',
         '2024-05-15',
         '13:00:00',
         '230 Park Avenue, New York, NY 10017',
@@ -639,7 +861,10 @@ VALUES
     ),
     (
         4,
-        5,
+        -- 5,
+        '347-291-9302',
+        'Charlie Pluth',
+        'CPluth@atlantic.com',
         '2024-05-25',
         '13:30:00',
         '228 Madison Ave, New York, NY 10016',
@@ -652,7 +877,10 @@ VALUES
     ),
     (
         2,
-        5,
+        -- 5,
+        '929-486-2740',
+        'Jane Austen',
+        'JAusten24@yahoo.com',
         '2024-08-22',
         '13:00:00',
         '2230 White Plains RdBronx, NY 10467',
@@ -665,7 +893,10 @@ VALUES
     ),
     (
         7,
-        3,
+        -- 3,
+        '718-624-7630',
+        'Ant Owens',
+        'Aowens728@gmail.com',
         '2024-06-20',
         '18:30:00',
         '3963 Orloff Ave, Bronx, NY 10463',
@@ -677,7 +908,20 @@ VALUES
         false
     );
 
-INSERT INTO firebaseUsers(uid, email) VALUES('YEFGFitu9nUVzr7BkUXC3nXYVXZ2', 'mary22@email.com');
+INSERT INTO
+    firebaseUsers (uid, email)
+VALUES
+    (
+        'YEFGFitu9nUVzr7BkUXC3nXYVXZ2',
+        'mary22@email.com'
+    );
 
-
-INSERT INTO firebasevendors(uid, email) VALUES('1sSDT9CSbuWq0Aygp02wp6sN48h1', 'ricktrock@gmail.com');
+INSERT INTO
+    firebaseVendors (uid, email, locations, online)
+VALUES
+    (
+        '1sSDT9CSbuWq0Aygp02wp6sN48h1',
+        'ricktrock@gmail.com',
+        '[{"lat": null, "lng": null}]',
+        true
+    );
