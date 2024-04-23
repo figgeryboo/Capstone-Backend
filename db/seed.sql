@@ -71,8 +71,7 @@ VALUES
             ]}
         ]'
     ),
-
-   (
+    (
         'SunRise Mohammed',
         'sunrisedelighticecream@gmail.com',
         'https://sunriseicecreamnyc.com/wp-content/uploads/2023/12/car11.png',
@@ -612,7 +611,7 @@ VALUES
          { "name": "Cookies and Cream Milkshake", "description": "Creamy milkshake with cookies and cream flavor", "price": 5.49 },
          { "name": "Rainbow Sherbet Cup", "description": "Colorful sherbet flavors in a cup", "price": 3.49 },
          { "name": "Mango Sorbet", "description": "Refreshing mango sorbet", "price": 4.49 },
-         { "name": "Peanut Butter Swirl Sundae", "description": "Peanut butter ice cream with swirls of chocolate syrup and nuts", "price": 5.99 },]',
+         { "name": "Peanut Butter Swirl Sundae", "description": "Peanut butter ice cream with swirls of chocolate syrup and nuts", "price": 5.99 }]',
          true,
          '[
         {
@@ -726,7 +725,7 @@ VALUES
     4.7,
     '{"💲", "💳" }',
     '[
-         { "name": "Cookies 'n' Cream Waffle Cone", "description": "Creamy vanilla ice cream with chocolate cookie pieces in a waffle cone", "price": 5.49 },
+         { "name": "Cookies & Cream Waffle Cone", "description": "Creamy vanilla ice cream with chocolate cookie pieces in a waffle cone", "price": 5.49 },
          { "name": "Pistachio Almond Ice Cream", "description": "Rich pistachio ice cream with roasted almond toppings", "price": 4.99 },
          { "name": "Rocky Road Sundae", "description": "Chocolate ice cream with marshmallows, nuts, and chocolate syrup", "price": 6.49 },
          { "name": "Coconut Pineapple Sorbet Cup", "description": "Tropical sorbet with coconut and pineapple flavors in a cup", "price": 4.49 },
