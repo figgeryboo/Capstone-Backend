@@ -16,7 +16,7 @@ const serviceAccount = {
   client_x509_cert_url: process.env.client_x509_cert_url,
   universe_domain: process.env.universe_domain
 }
-const fb_db_url=process.env.databaseURL
+const fb_db_url=process.env.fbdatabaseURL
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

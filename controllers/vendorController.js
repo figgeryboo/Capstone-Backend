@@ -6,7 +6,6 @@ const {
   getVendorLocations,
   addVendorLocations,
   vendorSignUp,
-  updateVendorLocations,
   getAllVendors,
   getVendorMetrics,
   getVendorById,
@@ -129,7 +128,7 @@ vendors.put("/locations/:uid", async (req, res) => {
     const { uid } = req.params;
     const { locations } = req.body;
 
-    const updatedVendorLocation = await updateVendorLocations(uid, locations);
+    const updatedVendorLocation = await addVendorLocations(uid, locations);
     res.status(200).json(updatedVendorLocation);
   } catch (err) {
     res.status(500).json({ error: err });
