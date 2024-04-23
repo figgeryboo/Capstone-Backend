@@ -19,7 +19,7 @@ VALUES
         'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
         'Dairy',
         4.0,
-        '{"Cash 💲", "Online Payment 💳"}',
+        '{"💲", "💳"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
              { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -71,78 +71,127 @@ VALUES
             ]}
         ]'
     ),
+
+   (
+        'SunRise Mohammed',
+        'sunrisedelighticecream@gmail.com',
+        'https://sunriseicecreamnyc.com/wp-content/uploads/2023/12/car11.png',
+        'Dairy, Kosher',
+        3.8,
+        '{"💲", "💳"}',
+        '[
+            {"name": "Vanilla Cone", "description": "Classic vanilla ice cream in a cone", "price": 8.00}, 
+            {"name": "Vanilla Waffle Cone", "description": "Classic vanilla ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Chocolate Cone", "description": "Rich chocolate ice cream in a cone", "price": 8.00}, 
+            {"name": "Chocolate Waffle Cone", "description": "Rich chocolate ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Strawberry Cone", "description": "Sweet strawberry ice cream in a cone", "price": 8.00},
+            {"name": "Double Swirl Cone", "description": "Two flavors swirled together in a cone", "price": 10.00},
+            {"name": "M & M Waffle", "description": "Waffle cone coated with colorful M & M candies", "price": 10.00},
+            {"name": "Pineapple Waffle", "description": "Fresh pineapple ice cream in a waffle cone", "price": 10.00},
+            {"name": "Strawberry Waffle", "description": "Fresh strawberry ice cream in a waffle cone", "price": 10.00}
+        ]',
+        true, 
+        '[{"lat": 40.754277, "lng": -74.002917}]',
+        '[
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+                }
+            ]}
+        ]'
+    ),
+
     (
         'Zeus Network',
         'NetworkZeus48@email.com',
         'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
         'Dairy, Vegan',
         3.5,
-        '{"Cash 💲", " Online Payment 💳"}',
+        '{"💲", "💳"}',
         '[
-        {
-            "name": "Mint Chocolate Chip Ice Cream Cone",
-            "description": "Refreshing mint ice cream with chocolate chips in a cone",
-            "price": 3.99
-        },
-        {
-            "name": "Strawberry Shortcake Bar",
-            "description": "Strawberry shortcake bar with a creamy filling",
-            "price": 4.99
-        },
-        {
-            "name": "Cookies and Cream Cup",
-            "description": "Creamy vanilla ice cream with chocolate cookie pieces in a cup",
-            "price": 5.49
-        },
-        {
-            "name": "Mango Sorbet Cup",
-            "description": "Sweet and tangy mango sorbet in a cup",
-            "price": 4.49
-        }
-    ]',
+            {
+                "name": "Mint Chocolate Chip Ice Cream Cone",
+                "description": "Refreshing mint ice cream with chocolate chips in a cone",
+                "price": 3.99
+            },
+            {
+                "name": "Strawberry Shortcake Bar",
+                "description": "Strawberry shortcake bar with a creamy filling",
+                "price": 4.99
+            },
+            {
+                "name": "Cookies and Cream Cup",
+                "description": "Creamy vanilla ice cream with chocolate cookie pieces in a cup",
+                "price": 5.49
+            },
+            {
+                "name": "Mango Sorbet Cup",
+                "description": "Sweet and tangy mango sorbet in a cup",
+                "price": 4.49
+            }
+        ]',
         false,
         '[
-        {"lat": 40.735874, "lng": -73.955312},
-        {"lat": 40.735807, "lng": -73.955946},
-        {"lat": 40.735738, "lng": -73.956710},
-        {"lat": 40.735683, "lng": -73.957464},
-        {"lat": 40.735598, "lng": -73.958193},
-        {"lat": 40.735578, "lng": -73.958456},
-        {"lat": 40.735580, "lng": -73.958494},
-        {"lat": 40.735804, "lng": -73.958534},
-        {"lat": 40.736033, "lng": -73.958572},
-        {"lat": 40.736140, "lng": -73.958601},
-        {"lat": 40.736195, "lng": -73.958669},
-        {"lat": 40.736133, "lng": -73.958870},
-        {"lat": 40.735970, "lng": -73.959169},
-        {"lat": 40.735768, "lng": -73.959531}
-    ]',
+            {"lat": 40.735874, "lng": -73.955312},
+            {"lat": 40.735807, "lng": -73.955946},
+            {"lat": 40.735738, "lng": -73.956710},
+            {"lat": 40.735683, "lng": -73.957464},
+            {"lat": 40.735598, "lng": -73.958193},
+            {"lat": 40.735578, "lng": -73.958456},
+            {"lat": 40.735580, "lng": -73.958494},
+            {"lat": 40.735804, "lng": -73.958534},
+            {"lat": 40.736033, "lng": -73.958572},
+            {"lat": 40.736140, "lng": -73.958601},
+            {"lat": 40.736195, "lng": -73.958669},
+            {"lat": 40.736133, "lng": -73.958870},
+            {"lat": 40.735970, "lng": -73.959169},
+            {"lat": 40.735768, "lng": -73.959531}
+        ]',
         '[
-        {
-            "period": "yearly",
-            "sales": 300000,
-            "transactions": 15000,
-            "monthly_variation": [
-                {
-                    "month": "January",
-                    "days": 31,
-                    "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-                    "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-                },
-                {
-                    "month": "February",
-                    "days": 28,
-                    "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-                    "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-                },
-                {
-                    "month": "March",
-                    "days": 31,
-                    "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100]
-                }
-            ]
-        }
-    ]'
+            {
+                "period": "yearly",
+                "sales": 300000,
+                "transactions": 15000,
+                "monthly_variation": [
+                    {
+                        "month": "January",
+                        "days": 31,
+                        "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                        "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                    },
+                    {
+                        "month": "February",
+                        "days": 28,
+                        "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                        "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                    },
+                    {
+                        "month": "March",
+                        "days": 31,
+                        "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100]
+                    }
+                ]
+            }
+        ]'
     ),
     (
         'Charles Benjamin',
@@ -150,7 +199,7 @@ VALUES
         'https://s3-media1.fl.yelpcdn.com/bphoto/AisYoUTirA-pNrUEdA-r7Q/o.jpg',
         'Dairy, Dairy Free, Gluten Free',
         3.8,
-        '{"Cash 💲", " card 💳", "bitcoin ₿", "online payment🧾"}',
+        '{"💲", "💳", "₿", "🧾"}',
         '[
              { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
              { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
@@ -254,7 +303,7 @@ VALUES
         'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
         'Dairy, Dairy Free, Gluten Free',
         4.5,
-        '{"Cash 💲", " Card 💳", "Online Payment🧾"}',
+        '{"💲", "💳", "🧾"}',
         '[
              { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
                 { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
@@ -341,7 +390,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy, Dairy Free, Gluten Free',
         4.5,
-        '{"Cash 💲", "Card 💳", "Bitcoin ₿", "Online Payment🧾"}',
+        '{"💲", "💳", "₿", "🧾"}',
         '[
            { "name": "Strawberry Ice Cream Cone", "description": "Fresh strawberry ice cream in a cone", "price": 3.99 },
             { "name": "Oreo Cookie Sandwich (Oreo Ice Cream Sandwich)", "description": "Classic Oreo cookies with vanilla ice cream", "price": 4.49 },
@@ -428,7 +477,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Dairy Free, Gluten Free',
         4.0,
-        '{"Cash 💲", "Card 💳", "Online Payment 🧾"}',
+        '{"💲", "💳", "🧾"}',
         '[
             { "name": "Unicorn Dream Cone", "description": "Colorful swirls of cotton candy and bubblegum ice cream in a cone", "price": 4.99 },
             { "name": "Mint Chocolate Brownie Sundae", "description": "Mint chocolate chip ice cream with chunks of brownie, hot fudge, and whipped cream", "price": 6.49 },
@@ -479,7 +528,7 @@ VALUES
         'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
         'Vegan',
         0.0,
-        '{"Cash 💲", "Card 💳", "Online Payment🧾"}',
+        '{"💲", "💳", "🧾"}',
         '[
             { "name": "Vegan Chocolate Ice Cream", "description": "Rich chocolate ice cream made with almond milk", "price": 4.99 },
             { "name": "Vegan Vanilla Ice Cream", "description": "Creamy vanilla ice cream made with coconut milk", "price": 4.99 },

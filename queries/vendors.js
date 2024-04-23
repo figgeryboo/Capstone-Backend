@@ -36,11 +36,26 @@ const vendorSignUp = async (vendorData) => {
   }
 };
 
+// const addVendorLocations = async (uid, locations) => {
+//   try {
+//     const newVendor = await db.one(
+//       "INSERT into firebaseVendors (uid, locations) VALUES ($1, $2) RETURNING *", [uid, JSON.stringify(locations)]
+//     );
+//     return newVendor;
+//   } catch (err) {
+//     return err;
+//   }
+// };
+
 const addVendorLocations = async (uid, locations) => {
   try {
-    const newVendor = await db.one(
-      "INSERT into firebaseVendors (uid, locations) VALUES ($1, $2) RETURNING *", [uid, JSON.stringify(locations)]
-    );
+    const query = `
+      INSERT INTO firebaseVendors (uid, locations)
+      VALUES ($1, $2)
+      ON CONFLICT (uid)
+      DO UPDATE SET locations = EXCLUDED.locations
+      RETURNING *`;
+    const newVendor = await db.one(query, [uid, JSON.stringify(locations)]);
     return newVendor;
   } catch (err) {
     return err;
