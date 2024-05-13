@@ -1,4 +1,5 @@
 \c wmicserver;
+
 INSERT INTO
     vendors (
         vendor_name,
@@ -111,7 +112,7 @@ VALUES
         ]'
     ),
     (
-        'Zeus Network',
+        'Zeus Lightning Cones',
         'NetworkZeus48@email.com',
         'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
         'Dairy, Vegan',
