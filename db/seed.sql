@@ -15,26 +15,28 @@ INSERT INTO
     )
 VALUES
     (
-        'Gabe Mendoza',
-        'GMendoza@example.com',
-        'https://garyssteaks.com/wp-content/uploads/2022/07/softies-Ice-Cream-truck-Catering-1.jpg',
-        'Dairy',
+        'SunRise #2 ',
+        'sunrisedelighticecream@gmail.com',
+        'https://sunriseicecreamnyc.com/wp-content/uploads/2023/12/car11.png',
+        'Dairy, Kosher',
         4.0,
         '{"💲", "💳"}',
         '[
-             { "name": "Classic Ice Cream Cone", "description": "Rich chocolate ice cream in a cone", "price": 3.99 },
-             { "name": "Mint Chocolate Chip Cookie Sandwich (Mint Chocolate Chipwich)", "description": "Mint chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
-             { "name": "Orange Creamsicle Bar (Creamsicle)", "description": "Orange creamsicle bar with a creamy filling", "price": 3.99 },
-             { "name": "Caramel Sundae", "description": "Caramel ice cream with caramel syrup and whipped cream", "price": 4.99 },
-             { "name": "Blueberry Cheesecake Cup", "description": "Blueberry cheesecake ice cream in a cup", "price": 3.49 },
-             { "name": "Coffee Float", "description": "Cold brew coffee with vanilla ice cream", "price": 4.99 },
-             { "name": "Pineapple Dole Whip Cup", "description": "Refreshing pineapple dole whip in a cup", "price": 3.99 }
+            {"name": "Vanilla Cone", "description": "Classic vanilla ice cream in a cone", "price": 8.00}, 
+            {"name": "Vanilla Waffle Cone", "description": "Classic vanilla ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Chocolate Cone", "description": "Rich chocolate ice cream in a cone", "price": 8.00}, 
+            {"name": "Chocolate Waffle Cone", "description": "Rich chocolate ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Strawberry Cone", "description": "Sweet strawberry ice cream in a cone", "price": 8.00},
+            {"name": "Double Swirl Cone", "description": "Two flavors swirled together in a cone", "price": 10.00},
+            {"name": "M & M Waffle", "description": "Waffle cone coated with colorful M & M candies", "price": 10.00},
+            {"name": "Pineapple Waffle", "description": "Fresh pineapple ice cream in a waffle cone", "price": 10.00},
+            {"name": "Strawberry Waffle", "description": "Fresh strawberry ice cream in a waffle cone", "price": 10.00}
         ]',
         true,
         '[
             {
-            "lat": 40.753823, 
-            "lng": -74.003309
+            "lat": 40.752496, 
+            "lng": -74.004347
             }     
         ]',
         '[
