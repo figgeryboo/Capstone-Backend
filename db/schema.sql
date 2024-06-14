@@ -78,9 +78,13 @@ firebaseVendors (
 
 ALTER TABLE events ADD COLUMN vendor_uid TEXT;
 
-create table customer_support (
-    id SERIAL PRIMARY KEY,
-    firebase_id varchar(255) not null, 
-    feedback TEXT not null,
+create table feedback (
+    id serial primary key,
+    email text,
+    firebase_uid varchar(255), 
+    rating integer not null check (rating between 1 and 5),
+    favorite_feature text,
+    least_favorite_feature text,
+    suggestions text,
     created_at timestamp default current_timestamp
 );
