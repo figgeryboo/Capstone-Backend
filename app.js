@@ -5,6 +5,7 @@ const vendorController = require("./controllers/vendorController");
 const userController = require("./controllers/userController");
 const eventController = require("./controllers/eventController");
 const firebaseController = require('./queries/saveUser')
+const feedbackController = require('./controllers/feedbackController')
 const app = express();
 
 app.use(cors());
@@ -14,6 +15,7 @@ app.use("/vendors", vendorController);
 app.use("/customers", userController);
 app.use("/events", eventController);
 app.use("/firebase", firebaseController);
+app.use("/feedback", feedbackController);
 
 app.get("/", (req, res) => {
     res.status(200).send(`<h1>Where's my Ice Cream Server Side</h1>`);
