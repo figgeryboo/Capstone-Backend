@@ -43,34 +43,30 @@ customers.post('/', async (req, res) => {
     }
 })
 
+
 customers.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  const { isFirebase } = req.query; // Add query parameter to specify ID type
   try {
-    const { id } = req.params;
-    const customer = await getCustomerById(id);
-    if (!customer) {
-      res.status(404).json({ error: "User not found" });
+    if (isFirebase) {
+      const customer = await getCustomerByFirebaseId(id);
+      if (!customer) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      return res.status(200).json(customer);
     } else {
-      res.status(200).json(customer);
+      const customer = await getCustomerById(id);
+      if (!customer) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      return res.status(200).json(customer);
     }
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message });
   }
 });
 
-customers.get("/:firebase_id", async (req, res) => {
-    try {
-      const { id } = req.params;
-      const customer = await getCustomerByFirebaseId(id);
-      if (!customer) {
-        res.status(404).json({ error: "User not found" });
-      } else {
-        res.status(200).json(customer);
-      }
-    } catch (err) {
-      res.status(500).json({ error: err.message });
-    }
-  });
-  
+ 
 customers.put('/:id', async (req, res) => {
     try {
       const { id } = req.params;
@@ -92,6 +88,30 @@ customers.put('/:id', async (req, res) => {
         res.status(200).json({ message: "Customer deleted successfully" });
     } catch (err) {
         res.status(500).json({ error: err });
+    }
+  });
+
+  customers.post("/:firebase_id/feedback", async (req, res) => {
+    try {
+      const { firebase_id } = req.params;
+      const feedback = await createFeedback(firebase_id, req.body);
+      res.status(201).json(feedback);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+  
+  customers.get("/:firebase_id/feedback", async (req, res) => {
+    try {
+      const { firebase_id } = req.params;
+      const feedback = await getFeedbackByFirebaseId(firebase_id);
+      if (!feedback) {
+        res.status(404).json({ error: "Feedback not found" });
+      } else {
+        res.status(200).json(feedback);
+      }
+    } catch (err) {
+      res.status(500).json({ error: err.message });
     }
   });
 
