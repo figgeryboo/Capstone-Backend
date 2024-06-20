@@ -778,38 +778,48 @@ VALUES
     (
         'New York Ice Cream',
         'EVENTS@NEWYORKICECREAM.NYC',
-        'https://newyorkicecream.nyc/cdn/shop/files/IMG_2729_2450x.jpg?v=1627411719'
+        'https://newyorkicecream.nyc/cdn/shop/files/IMG_2729_2450x.jpg?v=1627411719',
         'Dairy',
         4.5,
         '{"💲", "💳"}',
-        '[{"menu: unavailable"}]',
-        false
+        '[
+            {"name": "Vanilla Cone", "description": "Classic vanilla ice cream in a cone", "price": 8.00}, 
+            {"name": "Vanilla Waffle Cone", "description": "Classic vanilla ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Chocolate Cone", "description": "Rich chocolate ice cream in a cone", "price": 8.00}, 
+            {"name": "Chocolate Waffle Cone", "description": "Rich chocolate ice cream in a waffle cone", "price": 10.00}, 
+            {"name": "Strawberry Cone", "description": "Sweet strawberry ice cream in a cone", "price": 8.00},
+            {"name": "Double Swirl Cone", "description": "Two flavors swirled together in a cone", "price": 10.00},
+            {"name": "M & M Waffle", "description": "Waffle cone coated with colorful M & M candies", "price": 10.00},
+            {"name": "Pineapple Waffle", "description": "Fresh pineapple ice cream in a waffle cone", "price": 10.00},
+            {"name": "Strawberry Waffle", "description": "Fresh strawberry ice cream in a waffle cone", "price": 10.00}
+        ]',
+        false,
         '[{"lat": 40.753468, "lng": -73.984918}]',
         '[
-        {
-        "period": "yearly",
-        "sales": 350000,
-        "transactions": 18000,
-        "monthly_variation": [
             {
-            "month": "January",
-            "days": 31,
-            "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100],
-            "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205]
-            },
-            {
-            "month": "February",
-            "days": 28,
-            "sales_per_day": [1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600],
-            "transactions_per_day": [65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180]
-            },
-            {
-            "month": "March",
-            "days": 31,
-            "sales_per_day": [1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300],
-            "transactions_per_day": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215]
-            }
-        ]}
+            "period": "yearly",
+            "sales": 350000,
+            "transactions": 18000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600],
+                "transactions_per_day": [65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300],
+                "transactions_per_day": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215]
+                }
+            ]}
         ]'
     );
 
