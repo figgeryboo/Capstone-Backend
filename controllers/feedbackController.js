@@ -25,16 +25,16 @@ feedback.post("/", async (req, res) => {
       email,
       firebase_uid,
       rating,
-      favoriteFeature,
-      leastFavoriteFeature,
+      favorite_feature,
+      least_favorite_feature,
       suggestions,
     } = req.body;
     const newFeedback = await addFeedback(
       email,
       firebase_uid,
       rating,
-      favoriteFeature,
-      leastFavoriteFeature,
+      favorite_feature,
+      least_favorite_feature,
       suggestions
     );
     res.status(201).json(newFeedback);

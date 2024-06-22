@@ -22,6 +22,7 @@ const addFeedback = async (
   );
   return newFeedback
 } catch (err) {
+  console.error('Error inserting feedback:', err);
     return err;
 }
 };

@@ -83,8 +83,8 @@ create table feedback (
     email text,
     firebase_uid varchar(255), 
     rating integer not null check (rating between 1 and 5),
-    favorite_feature text,
-    least_favorite_feature text,
-    suggestions text,
+    favorite_feature varchar(255),
+    least_favorite_feature varchar(255),
+    suggestions varchar(255),
     created_at timestamp default current_timestamp
 );
