@@ -1082,5 +1082,5 @@ VALUES
     );
 
 
-INSERT INTO feedback (email, firebase_uid, rating, favoriteFeature, leastFavoriteFeature, suggestions)
+INSERT INTO feedback (email, firebase_uid, rating, favorite_feature, least_favorite_feature, suggestions)
 VALUES ('charlesbarkey@nba.com', 'U7JuriayZDSPe9IHaLikGMQzxyd2', 3, 'Unique eye catching UI', 'Not enough vendors in my area', 'More vendors around Port Authority would be great! I love what you are doing with this app. Keep up the good work!' );
