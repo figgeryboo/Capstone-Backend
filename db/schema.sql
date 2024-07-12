@@ -16,7 +16,8 @@ CREATE TABLE
         menu JSON,
         accessible BOOLEAN, 
         coordinates JSON,
-        transaction_metrics JSON
+        transaction_metrics JSON,
+        business_hours JSON
     );
 
 CREATE TABLE

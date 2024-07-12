@@ -10,7 +10,8 @@ INSERT INTO
         menu,
         accessible,
         coordinates,
-        transaction_metrics
+        transaction_metrics,
+        business_hours
     )
 VALUES
     (
@@ -63,6 +64,15 @@ VALUES
                 "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -110,6 +120,15 @@ VALUES
                 "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -197,6 +216,15 @@ VALUES
                 "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -248,6 +276,15 @@ VALUES
                 "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -325,6 +362,15 @@ VALUES
                 "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -372,6 +418,15 @@ VALUES
                 "transactions_per_day": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215]
                 }
             ]}
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
     (
@@ -434,6 +489,15 @@ VALUES
                 }
             ]
             }
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "22:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "22:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "22:00"},
+            {"day": "Thursday", "open": "09:00", "close": "22:00"},
+            {"day": "Friday", "open": "09:00", "close": "22:00"},
+            {"day": "Saturday", "open": "09:00", "close": "22:00"},
+            {"day": "Sunday", "open": "09:00", "close": "22:00"}
         ]'
     );
 
