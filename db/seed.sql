@@ -131,102 +131,102 @@ VALUES
             {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
-    (
-        'Ahmad Fun Time',
-        'Ahmad931@example.com',
-        'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
-        'Dairy, Dairy Free, Gluten Free',
-        4.5,
-        '{"💲", "💳", "🧾"}',
-        '[
-             { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
-                { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
-                { "name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99 },
-                { "name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 3.99 },
-                { "name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
-                { "name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99 },
-                { "name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 3.49 },
-                { "name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99 },
-                { "name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49 }
-        ]',
-        true,
-        '[
-            {"lat": 40.746661, "lng": -73.997724},
-            {"lat": 40.746968, "lng": -73.998487},
-            {"lat": 40.747336, "lng": -73.999351},
-            {"lat": 40.747663, "lng": -74.000121},
-            {"lat": 40.747847, "lng": -74.000553},
-            {"lat": 40.748175, "lng": -74.001336},
-            {"lat": 40.748482, "lng": -74.002092},
-            {"lat": 40.748758, "lng": -74.002734},
-            {"lat": 40.748998, "lng": -74.003247},
-            {"lat": 40.749156, "lng": -74.003633},
-            {"lat": 40.749255, "lng": -74.003887},
-            {"lat": 40.749315, "lng": -74.004031},
-            {"lat": 40.749420, "lng": -74.004278},
-            {"lat": 40.749565, "lng": -74.004632},
-            {"lat": 40.749671, "lng": -74.004882},
-            {"lat": 40.749766, "lng": -74.005102},
-            {"lat": 40.749876, "lng": -74.005363},
-            {"lat": 40.749971, "lng": -74.005586},
-            {"lat": 40.750031, "lng": -74.005738},
-            {"lat": 40.750106, "lng": -74.005916},
-            {"lat": 40.750196, "lng": -74.006115},
-            {"lat": 40.750083, "lng": -74.006269},
-            {"lat": 40.749984, "lng": -74.006344},
-            {"lat": 40.749851, "lng": -74.006447},
-            {"lat": 40.749771, "lng": -74.006508},
-            {"lat": 40.749622, "lng": -74.006617},
-            {"lat": 40.749452, "lng": -74.006620},
-            {"lat": 40.749301, "lng": -74.006726},
-            {"lat": 40.749144, "lng": -74.006835},
-            {"lat": 40.749022, "lng": -74.006916},
-            {"lat": 40.748893, "lng": -74.006935},
-            {"lat": 40.748801, "lng": -74.006834},
-            {"lat": 40.748689, "lng": -74.006557},
-            {"lat": 40.748577, "lng": -74.006307},
-            {"lat": 40.748415, "lng": -74.005925},
-            {"lat": 40.748174, "lng": -74.005369},
-            {"lat": 40.747893, "lng": -74.004737},
-            {"lat": 40.747823, "lng": -74.004504},
-            {"lat": 40.747705, "lng": -74.004252}
-        ]',
-        '[
-             {
-            "period": "yearly",
-            "sales": 300000,
-            "transactions": 15000,
-            "monthly_variation": [
-                {
-                "month": "January",
-                "days": 31,
-                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-                },
-                {
-                "month": "February",
-                "days": 28,
-                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-                },
-                {
-                "month": "March",
-                "days": 31,
-                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
-                }
-            ]}
-        ]',
-        '[
-            {"day": "Monday", "open": "09:00", "close": "21:00"},
-            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
-            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
-            {"day": "Thursday", "open": "09:00", "close": "21:00"},
-            {"day": "Friday", "open": "09:00", "close": "21:00"},
-            {"day": "Saturday", "open": "09:00", "close": "21:00"},
-            {"day": "Sunday", "open": "09:00", "close": "21:00"}
-        ]'
-    ),
+    -- (
+    --     'Ahmad Fun Time',
+    --     'Ahmad931@example.com',
+    --     'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
+    --     'Dairy, Dairy Free, Gluten Free',
+    --     4.5,
+    --     '{"💲", "💳", "🧾"}',
+    --     '[
+    --          { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
+    --             { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
+    --             { "name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99 },
+    --             { "name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 3.99 },
+    --             { "name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
+    --             { "name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99 },
+    --             { "name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 3.49 },
+    --             { "name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99 },
+    --             { "name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49 }
+    --     ]',
+    --     true,
+    --     '[
+    --         {"lat": 40.746661, "lng": -73.997724},
+    --         {"lat": 40.746968, "lng": -73.998487},
+    --         {"lat": 40.747336, "lng": -73.999351},
+    --         {"lat": 40.747663, "lng": -74.000121},
+    --         {"lat": 40.747847, "lng": -74.000553},
+    --         {"lat": 40.748175, "lng": -74.001336},
+    --         {"lat": 40.748482, "lng": -74.002092},
+    --         {"lat": 40.748758, "lng": -74.002734},
+    --         {"lat": 40.748998, "lng": -74.003247},
+    --         {"lat": 40.749156, "lng": -74.003633},
+    --         {"lat": 40.749255, "lng": -74.003887},
+    --         {"lat": 40.749315, "lng": -74.004031},
+    --         {"lat": 40.749420, "lng": -74.004278},
+    --         {"lat": 40.749565, "lng": -74.004632},
+    --         {"lat": 40.749671, "lng": -74.004882},
+    --         {"lat": 40.749766, "lng": -74.005102},
+    --         {"lat": 40.749876, "lng": -74.005363},
+    --         {"lat": 40.749971, "lng": -74.005586},
+    --         {"lat": 40.750031, "lng": -74.005738},
+    --         {"lat": 40.750106, "lng": -74.005916},
+    --         {"lat": 40.750196, "lng": -74.006115},
+    --         {"lat": 40.750083, "lng": -74.006269},
+    --         {"lat": 40.749984, "lng": -74.006344},
+    --         {"lat": 40.749851, "lng": -74.006447},
+    --         {"lat": 40.749771, "lng": -74.006508},
+    --         {"lat": 40.749622, "lng": -74.006617},
+    --         {"lat": 40.749452, "lng": -74.006620},
+    --         {"lat": 40.749301, "lng": -74.006726},
+    --         {"lat": 40.749144, "lng": -74.006835},
+    --         {"lat": 40.749022, "lng": -74.006916},
+    --         {"lat": 40.748893, "lng": -74.006935},
+    --         {"lat": 40.748801, "lng": -74.006834},
+    --         {"lat": 40.748689, "lng": -74.006557},
+    --         {"lat": 40.748577, "lng": -74.006307},
+    --         {"lat": 40.748415, "lng": -74.005925},
+    --         {"lat": 40.748174, "lng": -74.005369},
+    --         {"lat": 40.747893, "lng": -74.004737},
+    --         {"lat": 40.747823, "lng": -74.004504},
+    --         {"lat": 40.747705, "lng": -74.004252}
+    --     ]',
+    --     '[
+    --          {
+    --         "period": "yearly",
+    --         "sales": 300000,
+    --         "transactions": 15000,
+    --         "monthly_variation": [
+    --             {
+    --             "month": "January",
+    --             "days": 31,
+    --             "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+    --             "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+    --             },
+    --             {
+    --             "month": "February",
+    --             "days": 28,
+    --             "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+    --             "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+    --             },
+    --             {
+    --             "month": "March",
+    --             "days": 31,
+    --             "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+    --             "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+    --             }
+    --         ]}
+    --     ]',
+    --     '[
+    --         {"day": "Monday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Thursday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Friday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Saturday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Sunday", "open": "09:00", "close": "21:00"}
+    --     ]'
+    -- ),
     (
         'Nice Cream Truck',
         'nicecream@example.com',
@@ -287,92 +287,92 @@ VALUES
             {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
-    (
-        'Nyugen Shin',
-        '515-758-6390',
-        'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
-        'Vegan',
-        0.0,
-        '{"💲", "💳", "🧾"}',
-        '[
-            { "name": "Vegan Chocolate Ice Cream", "description": "Rich chocolate ice cream made with almond milk", "price": 4.99 },
-            { "name": "Vegan Vanilla Ice Cream", "description": "Creamy vanilla ice cream made with coconut milk", "price": 4.99 },
-            { "name": "Vegan Strawberry Sorbet", "description": "Refreshing strawberry sorbet made with real fruit", "price": 4.99 },
-            { "name": "Vegan Banana Nice Cream", "description": "Frozen banana blended into a creamy ice cream", "price": 4.99 },
-            { "name": "Vegan Cookie Dough Bites", "description": "Homemade vegan cookie dough bites mixed into ice cream", "price": 1.99 },
-            { "name": "Vegan Chocolate Sauce", "description": "Rich chocolate sauce made without dairy", "price": 0.99 }
-        ]',
-        true,
-        '[ {"lat": 40.732856, "lng": -73.990026},
-            {"lat": 40.733034, "lng": -73.989981},
-            {"lat": 40.733194, "lng": -73.989946},
-            {"lat": 40.733333, "lng": -73.989907},
-            {"lat": 40.733484, "lng": -73.989864},
-            {"lat": 40.733633, "lng": -73.989859},
-            {"lat": 40.733764, "lng": -73.989865},
-            {"lat": 40.733918, "lng": -73.989873},
-            {"lat": 40.734102, "lng": -73.989886},
-            {"lat": 40.734270, "lng": -73.989893},
-            {"lat": 40.734501, "lng": -73.989910},
-            {"lat": 40.734625, "lng": -73.989950},
-            {"lat": 40.734788, "lng": -73.989977},
-            {"lat": 40.734969, "lng": -73.989998},
-            {"lat": 40.735109, "lng": -73.989990},
-            {"lat": 40.735232, "lng": -73.989944},
-            {"lat": 40.735371, "lng": -73.989859},
-            {"lat": 40.735513, "lng": -73.989755},
-            {"lat": 40.735686, "lng": -73.989622},
-            {"lat": 40.735827, "lng": -73.989516},
-            {"lat": 40.735936, "lng": -73.989444},
-            {"lat": 40.736062, "lng": -73.989356},
-            {"lat": 40.736236, "lng": -73.989222},
-            {"lat": 40.736376, "lng": -73.989118},
-            {"lat": 40.736574, "lng": -73.989030},
-            {"lat": 40.736656, "lng": -73.989219},
-            {"lat": 40.736734, "lng": -73.989430},
-            {"lat": 40.736896, "lng": -73.989801},
-            {"lat": 40.736993, "lng": -73.990038},
-            {"lat": 40.737056, "lng": -73.990187},
-            {"lat": 40.737099, "lng": -73.990354},
-            {"lat": 40.736953, "lng": -73.990446},
-            {"lat": 40.736903, "lng": -73.990485}
-        ]',
-        '[ 
-            {
-            "period": "yearly",
-            "sales": 300000,
-            "transactions": 15000,
-            "monthly_variation": [
-                {
-                "month": "January",
-                "days": 31,
-                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-                },
-                {
-                "month": "February",
-                "days": 28,
-                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-                },
-                {
-                "month": "March",
-                "days": 31,
-                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
-                }
-            ]}
-        ]',
-        '[
-            {"day": "Monday", "open": "09:00", "close": "21:00"},
-            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
-            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
-            {"day": "Thursday", "open": "09:00", "close": "21:00"},
-            {"day": "Friday", "open": "09:00", "close": "21:00"},
-            {"day": "Saturday", "open": "09:00", "close": "21:00"},
-            {"day": "Sunday", "open": "09:00", "close": "21:00"}
-        ]'
-    ),
+    -- (
+    --     'Nyugen Shin',
+    --     '515-758-6390',
+    --     'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
+    --     'Vegan',
+    --     0.0,
+    --     '{"💲", "💳", "🧾"}',
+    --     '[
+    --         { "name": "Vegan Chocolate Ice Cream", "description": "Rich chocolate ice cream made with almond milk", "price": 4.99 },
+    --         { "name": "Vegan Vanilla Ice Cream", "description": "Creamy vanilla ice cream made with coconut milk", "price": 4.99 },
+    --         { "name": "Vegan Strawberry Sorbet", "description": "Refreshing strawberry sorbet made with real fruit", "price": 4.99 },
+    --         { "name": "Vegan Banana Nice Cream", "description": "Frozen banana blended into a creamy ice cream", "price": 4.99 },
+    --         { "name": "Vegan Cookie Dough Bites", "description": "Homemade vegan cookie dough bites mixed into ice cream", "price": 1.99 },
+    --         { "name": "Vegan Chocolate Sauce", "description": "Rich chocolate sauce made without dairy", "price": 0.99 }
+    --     ]',
+    --     true,
+    --     '[ {"lat": 40.732856, "lng": -73.990026},
+    --         {"lat": 40.733034, "lng": -73.989981},
+    --         {"lat": 40.733194, "lng": -73.989946},
+    --         {"lat": 40.733333, "lng": -73.989907},
+    --         {"lat": 40.733484, "lng": -73.989864},
+    --         {"lat": 40.733633, "lng": -73.989859},
+    --         {"lat": 40.733764, "lng": -73.989865},
+    --         {"lat": 40.733918, "lng": -73.989873},
+    --         {"lat": 40.734102, "lng": -73.989886},
+    --         {"lat": 40.734270, "lng": -73.989893},
+    --         {"lat": 40.734501, "lng": -73.989910},
+    --         {"lat": 40.734625, "lng": -73.989950},
+    --         {"lat": 40.734788, "lng": -73.989977},
+    --         {"lat": 40.734969, "lng": -73.989998},
+    --         {"lat": 40.735109, "lng": -73.989990},
+    --         {"lat": 40.735232, "lng": -73.989944},
+    --         {"lat": 40.735371, "lng": -73.989859},
+    --         {"lat": 40.735513, "lng": -73.989755},
+    --         {"lat": 40.735686, "lng": -73.989622},
+    --         {"lat": 40.735827, "lng": -73.989516},
+    --         {"lat": 40.735936, "lng": -73.989444},
+    --         {"lat": 40.736062, "lng": -73.989356},
+    --         {"lat": 40.736236, "lng": -73.989222},
+    --         {"lat": 40.736376, "lng": -73.989118},
+    --         {"lat": 40.736574, "lng": -73.989030},
+    --         {"lat": 40.736656, "lng": -73.989219},
+    --         {"lat": 40.736734, "lng": -73.989430},
+    --         {"lat": 40.736896, "lng": -73.989801},
+    --         {"lat": 40.736993, "lng": -73.990038},
+    --         {"lat": 40.737056, "lng": -73.990187},
+    --         {"lat": 40.737099, "lng": -73.990354},
+    --         {"lat": 40.736953, "lng": -73.990446},
+    --         {"lat": 40.736903, "lng": -73.990485}
+    --     ]',
+    --     '[ 
+    --         {
+    --         "period": "yearly",
+    --         "sales": 300000,
+    --         "transactions": 15000,
+    --         "monthly_variation": [
+    --             {
+    --             "month": "January",
+    --             "days": 31,
+    --             "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+    --             "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+    --             },
+    --             {
+    --             "month": "February",
+    --             "days": 28,
+    --             "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+    --             "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+    --             },
+    --             {
+    --             "month": "March",
+    --             "days": 31,
+    --             "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+    --             "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+    --             }
+    --         ]}
+    --     ]',
+    --     '[
+    --         {"day": "Monday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Thursday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Friday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Saturday", "open": "09:00", "close": "21:00"},
+    --         {"day": "Sunday", "open": "09:00", "close": "21:00"}
+    --     ]'
+    -- ),
     (
         'New York Ice Cream',
         'EVENTS@NEWYORKICECREAM.NYC',
@@ -577,13 +577,13 @@ INSERT INTO
         review_date
     )
 VALUES
-    (
-        4,
-        6,
-        'Great food and service!',
-        4.0,
-        '2024-03-12'
-    ),
+    -- (
+    --     4,
+    --     6,
+    --     'Great food and service!',
+    --     4.0,
+    --     '2024-03-12'
+    -- ),
     (
         2,
         2,
@@ -607,7 +607,7 @@ VALUES
     ),
     (
         3,
-        7,
+        4,
         'Awesome flavors. 8th wonder of the world!',
         5.0,
         '2024-03-18'
@@ -621,7 +621,7 @@ VALUES
     ),
     (
         5,
-        7,
+        4,
         'Loved the customer service. Will be back!!',
         4.0,
         '2024-03-21'
@@ -636,7 +636,7 @@ VALUES
     ),
     (
         6,
-        6,
+        2,
         'Shooketh. S/O to WMIC with the plug!',
         4.5,
         '2024-04-18'
