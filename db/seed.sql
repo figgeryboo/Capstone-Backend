@@ -1,4 +1,4 @@
-\c wmicserver;
+\c wmicserver_7ohn;
 INSERT INTO
     vendors (
         vendor_name,
@@ -129,6 +129,79 @@ VALUES
             {"day": "Friday", "open": "09:00", "close": "21:00"},
             {"day": "Saturday", "open": "09:00", "close": "21:00"},
             {"day": "Sunday", "open": "09:00", "close": "21:00"}
+        ]'
+    ),
+    (
+        'Petes Ice Cream',
+        'PetesIceCream@gmail.com',
+        'https://example.com/olivia-ice-cream.jpg',
+        'Dairy, Vegan',
+        4.0,
+        '{"💲"}',
+        '[
+            { "name": "Vanilla Swirl Cone", "description": "Creamy vanilla ice cream in a plain cone", "price": 4.99 },
+            { "name": "Vanilla Swirl Cone with sprinkles", "description": "Creamy vanilla ice cream in a plain cone with sprinkles of your choice", "price": 4.99 },
+            { "name": "Chocolate Swirl Cone", "description": "Creamy chocolate ice cream in a plain cone", "price": 4.99 },
+            { "name": "Chocolate Swirl Cone with sprinkles", "description": "Creamy chocolate ice cream in a plain cone with sprinkles of your choice", "price": 4.99 },
+            { "name": "Chocolate Waffle Cone", "description": "Creamy chocolate ice cream in a waffle cone", "price": 6.99 },
+            { "name": "Vanilla Waffle Cone", "description": "Creamy vanilla ice cream in a waffle cone", "price": 6.99 },
+            { "name": "Vanilla Double Swirl Cone", "description": "Creamy vanilla ice cream in a double plain cone", "price": 8.99 },
+            { "name": "Chocolate Double Swirl Cone", "description": "Creamy chocolate ice cream in a double plain cone", "price": 8.99 },
+            { "name": "Vanilla Double Dipped  Swirl Cone", "description": "Creamy vanilla ice cream dipped flavor coating in a double plain cone", "price": 6.99 },
+            { "name": "Chocolate Double Dipped Swirl Cone", "description": "Creamy chocolate ice cream dipped flavor coating in a double plain cone", "price": 6.99 },
+            { "name": "Coconut Frozen Yogurt Cone", "description": "Creamy coconut frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Pineapple Frozen Yogurt Cone", "description": "Creamy pineapple frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Strawberry Frozen Yogurt Cone", "description": "Creamy strawberry frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Blueberry Frozen Yogurt Cone", "description": "Creamy blueberry frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Strawberry Sundae", "description": "Vanilla ice cream with strawberries, nuts, and strawberry syrup", "price": 6.49 },
+            { "name": "Banana Split", "description": "Classic banana split with vanilla, chocolate, and strawberry ice cream", "price": 6.99 },
+            { "name": "Cherry Italian Icee", "description": "Cherry flavored icee treat", "price": 6.99 },
+            { "name": "Rainbow Italian Icee", "description": "Fruit punch flavored icee treat", "price": 6.99 },
+            { "name": "Coconut Italian Icee", "description": "Coconut flavored icee treat", "price": 6.99 }
+        ]',
+        true,
+        '[
+            {
+            "lat": 40.745120,
+            "lng": -73.957735
+            }
+        ]',
+        '[
+            {
+                "period": "yearly",
+                "sales": 400000,
+                "transactions": 20000,
+                "monthly_variation": 
+                    [
+                        {
+                        "month": "March",
+                        "days": 31,
+                        "sales_per_day": [1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200],
+                        "transactions_per_day": [65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210]
+                        },
+                        {
+                        "month": "April",
+                        "days": 28,
+                        "sales_per_day": [1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700],
+                        "transactions_per_day": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180]
+                        },
+                        {
+                        "month": "May",
+                        "days": 31,
+                        "sales_per_day": [1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400],
+                        "transactions_per_day": [75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220]
+                        }
+                    ]
+            }
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "22:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "22:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "22:00"},
+            {"day": "Thursday", "open": "09:00", "close": "22:00"},
+            {"day": "Friday", "open": "09:00", "close": "22:00"},
+            {"day": "Saturday", "open": "09:00", "close": "22:00"},
+            {"day": "Sunday", "open": "09:00", "close": "22:00"}
         ]'
     ),
     -- (
@@ -287,92 +360,6 @@ VALUES
             {"day": "Sunday", "open": "09:00", "close": "21:00"}
         ]'
     ),
-    -- (
-    --     'Nyugen Shin',
-    --     '515-758-6390',
-    --     'https://png.pngtree.com/png-clipart/20220111/ourmid/pngtree-pink-girl-small-ice-cream-png-image_4152051.png',
-    --     'Vegan',
-    --     0.0,
-    --     '{"💲", "💳", "🧾"}',
-    --     '[
-    --         { "name": "Vegan Chocolate Ice Cream", "description": "Rich chocolate ice cream made with almond milk", "price": 4.99 },
-    --         { "name": "Vegan Vanilla Ice Cream", "description": "Creamy vanilla ice cream made with coconut milk", "price": 4.99 },
-    --         { "name": "Vegan Strawberry Sorbet", "description": "Refreshing strawberry sorbet made with real fruit", "price": 4.99 },
-    --         { "name": "Vegan Banana Nice Cream", "description": "Frozen banana blended into a creamy ice cream", "price": 4.99 },
-    --         { "name": "Vegan Cookie Dough Bites", "description": "Homemade vegan cookie dough bites mixed into ice cream", "price": 1.99 },
-    --         { "name": "Vegan Chocolate Sauce", "description": "Rich chocolate sauce made without dairy", "price": 0.99 }
-    --     ]',
-    --     true,
-    --     '[ {"lat": 40.732856, "lng": -73.990026},
-    --         {"lat": 40.733034, "lng": -73.989981},
-    --         {"lat": 40.733194, "lng": -73.989946},
-    --         {"lat": 40.733333, "lng": -73.989907},
-    --         {"lat": 40.733484, "lng": -73.989864},
-    --         {"lat": 40.733633, "lng": -73.989859},
-    --         {"lat": 40.733764, "lng": -73.989865},
-    --         {"lat": 40.733918, "lng": -73.989873},
-    --         {"lat": 40.734102, "lng": -73.989886},
-    --         {"lat": 40.734270, "lng": -73.989893},
-    --         {"lat": 40.734501, "lng": -73.989910},
-    --         {"lat": 40.734625, "lng": -73.989950},
-    --         {"lat": 40.734788, "lng": -73.989977},
-    --         {"lat": 40.734969, "lng": -73.989998},
-    --         {"lat": 40.735109, "lng": -73.989990},
-    --         {"lat": 40.735232, "lng": -73.989944},
-    --         {"lat": 40.735371, "lng": -73.989859},
-    --         {"lat": 40.735513, "lng": -73.989755},
-    --         {"lat": 40.735686, "lng": -73.989622},
-    --         {"lat": 40.735827, "lng": -73.989516},
-    --         {"lat": 40.735936, "lng": -73.989444},
-    --         {"lat": 40.736062, "lng": -73.989356},
-    --         {"lat": 40.736236, "lng": -73.989222},
-    --         {"lat": 40.736376, "lng": -73.989118},
-    --         {"lat": 40.736574, "lng": -73.989030},
-    --         {"lat": 40.736656, "lng": -73.989219},
-    --         {"lat": 40.736734, "lng": -73.989430},
-    --         {"lat": 40.736896, "lng": -73.989801},
-    --         {"lat": 40.736993, "lng": -73.990038},
-    --         {"lat": 40.737056, "lng": -73.990187},
-    --         {"lat": 40.737099, "lng": -73.990354},
-    --         {"lat": 40.736953, "lng": -73.990446},
-    --         {"lat": 40.736903, "lng": -73.990485}
-    --     ]',
-    --     '[ 
-    --         {
-    --         "period": "yearly",
-    --         "sales": 300000,
-    --         "transactions": 15000,
-    --         "monthly_variation": [
-    --             {
-    --             "month": "January",
-    --             "days": 31,
-    --             "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-    --             "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-    --             },
-    --             {
-    --             "month": "February",
-    --             "days": 28,
-    --             "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-    --             "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-    --             },
-    --             {
-    --             "month": "March",
-    --             "days": 31,
-    --             "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-    --             "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
-    --             }
-    --         ]}
-    --     ]',
-    --     '[
-    --         {"day": "Monday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Tuesday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Wednesday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Thursday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Friday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Saturday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Sunday", "open": "09:00", "close": "21:00"}
-    --     ]'
-    -- ),
     (
         'New York Ice Cream',
         'EVENTS@NEWYORKICECREAM.NYC',

@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS wmicserver;
+DROP DATABASE IF EXISTS wmicserver_7ohn;
 
-CREATE DATABASE wmicserver;
+CREATE DATABASE wmicserver_7ohn;
 
-\c wmicserver;
+\c wmicserver_7ohn;
 
 CREATE TABLE
     vendors (
