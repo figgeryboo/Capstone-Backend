@@ -204,102 +204,66 @@ VALUES
             {"day": "Sunday", "open": "09:00", "close": "22:00"}
         ]'
     ),
-    -- (
-    --     'Ahmad Fun Time',
-    --     'Ahmad931@example.com',
-    --     'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
-    --     'Dairy, Dairy Free, Gluten Free',
-    --     4.5,
-    --     '{"💲", "💳", "🧾"}',
-    --     '[
-    --          { "name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 3.49 },
-    --             { "name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 2.99 },
-    --             { "name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99 },
-    --             { "name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 3.99 },
-    --             { "name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49 },
-    --             { "name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99 },
-    --             { "name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 3.49 },
-    --             { "name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99 },
-    --             { "name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49 }
-    --     ]',
-    --     true,
-    --     '[
-    --         {"lat": 40.746661, "lng": -73.997724},
-    --         {"lat": 40.746968, "lng": -73.998487},
-    --         {"lat": 40.747336, "lng": -73.999351},
-    --         {"lat": 40.747663, "lng": -74.000121},
-    --         {"lat": 40.747847, "lng": -74.000553},
-    --         {"lat": 40.748175, "lng": -74.001336},
-    --         {"lat": 40.748482, "lng": -74.002092},
-    --         {"lat": 40.748758, "lng": -74.002734},
-    --         {"lat": 40.748998, "lng": -74.003247},
-    --         {"lat": 40.749156, "lng": -74.003633},
-    --         {"lat": 40.749255, "lng": -74.003887},
-    --         {"lat": 40.749315, "lng": -74.004031},
-    --         {"lat": 40.749420, "lng": -74.004278},
-    --         {"lat": 40.749565, "lng": -74.004632},
-    --         {"lat": 40.749671, "lng": -74.004882},
-    --         {"lat": 40.749766, "lng": -74.005102},
-    --         {"lat": 40.749876, "lng": -74.005363},
-    --         {"lat": 40.749971, "lng": -74.005586},
-    --         {"lat": 40.750031, "lng": -74.005738},
-    --         {"lat": 40.750106, "lng": -74.005916},
-    --         {"lat": 40.750196, "lng": -74.006115},
-    --         {"lat": 40.750083, "lng": -74.006269},
-    --         {"lat": 40.749984, "lng": -74.006344},
-    --         {"lat": 40.749851, "lng": -74.006447},
-    --         {"lat": 40.749771, "lng": -74.006508},
-    --         {"lat": 40.749622, "lng": -74.006617},
-    --         {"lat": 40.749452, "lng": -74.006620},
-    --         {"lat": 40.749301, "lng": -74.006726},
-    --         {"lat": 40.749144, "lng": -74.006835},
-    --         {"lat": 40.749022, "lng": -74.006916},
-    --         {"lat": 40.748893, "lng": -74.006935},
-    --         {"lat": 40.748801, "lng": -74.006834},
-    --         {"lat": 40.748689, "lng": -74.006557},
-    --         {"lat": 40.748577, "lng": -74.006307},
-    --         {"lat": 40.748415, "lng": -74.005925},
-    --         {"lat": 40.748174, "lng": -74.005369},
-    --         {"lat": 40.747893, "lng": -74.004737},
-    --         {"lat": 40.747823, "lng": -74.004504},
-    --         {"lat": 40.747705, "lng": -74.004252}
-    --     ]',
-    --     '[
-    --          {
-    --         "period": "yearly",
-    --         "sales": 300000,
-    --         "transactions": 15000,
-    --         "monthly_variation": [
-    --             {
-    --             "month": "January",
-    --             "days": 31,
-    --             "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
-    --             "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
-    --             },
-    --             {
-    --             "month": "February",
-    --             "days": 28,
-    --             "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
-    --             "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
-    --             },
-    --             {
-    --             "month": "March",
-    --             "days": 31,
-    --             "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
-    --             "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
-    --             }
-    --         ]}
-    --     ]',
-    --     '[
-    --         {"day": "Monday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Tuesday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Wednesday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Thursday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Friday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Saturday", "open": "09:00", "close": "21:00"},
-    --         {"day": "Sunday", "open": "09:00", "close": "21:00"}
-    --     ]'
-    -- ),
+    (
+        'Ahmad Fun Time',
+        'ahmadg9913@gmail.com',
+        'https://fastly.4sqi.net/img/general/600x600/1330338_3souKAYnQHUNjfQJ-yXHQLasWY4Qx07Z56ACaCKnFQM.jpg',
+        'Dairy, Dairy Free',
+        4.5,
+        '{"💲", "💳", "🧾"}',
+        '[
+            {"name": "Classic Ice Cream Sandwich", "description": "Vanilla ice cream between two chocolate wafers", "price": 4.49},
+            {"name": "Fruit Popsicle", "description": "Refreshing popsicle made with real fruit juices", "price": 3.99},
+            {"name": "Chocolate Sundae", "description": "Rich chocolate ice cream with chocolate syrup and whipped cream", "price": 4.99},
+            {"name": "Vanilla Ice Cream Cone", "description": "Classic vanilla ice cream in a cone", "price": 4.99},
+            {"name": "Chocolate Chip Cookie Sandwich (Chipwich)", "description": "Chocolate chip cookie sandwich with vanilla ice cream", "price": 4.49},
+            {"name": "Strawberry Shortcake Bar (Good Humor)", "description": "Strawberry shortcake bar with a creamy filling", "price": 3.99},
+            {"name": "Rainbow Sherbet Cup", "description": "Colorful and fruity sherbet in a cup", "price": 4.49},
+            {"name": "Root Beer Float", "description": "Classic root beer float with vanilla ice cream", "price": 4.99},
+            {"name": "Banana Split", "description": "Traditional banana split with multiple ice cream flavors", "price": 6.49}
+        ]',
+        true,
+        '[
+            {"lat": 40.753802, "lng": -73.981837}
+        ]',
+        '[
+            {
+                "period": "yearly",
+                "sales": 400000,
+                "transactions": 20000,
+                "monthly_variation": 
+                    [
+                        {
+                        "month": "March",
+                        "days": 31,
+                        "sales_per_day": [1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200],
+                        "transactions_per_day": [65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210]
+                        },
+                        {
+                        "month": "April",
+                        "days": 28,
+                        "sales_per_day": [1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700],
+                        "transactions_per_day": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180]
+                        },
+                        {
+                        "month": "May",
+                        "days": 31,
+                        "sales_per_day": [1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400],
+                        "transactions_per_day": [75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220]
+                        }
+                    ]
+            }
+        ]',
+        '[
+            {"day": "Monday", "open": "09:00", "close": "21:00"},
+            {"day": "Tuesday", "open": "09:00", "close": "21:00"},
+            {"day": "Wednesday", "open": "09:00", "close": "21:00"},
+            {"day": "Thursday", "open": "09:00", "close": "21:00"},
+            {"day": "Friday", "open": "09:00", "close": "21:00"},
+            {"day": "Saturday", "open": "09:00", "close": "21:00"},
+            {"day": "Sunday", "open": "09:00", "close": "21:00"}
+        ]'
+    ),
     (
         'Nice Cream Truck',
         'nicecream@example.com',
@@ -485,6 +449,75 @@ VALUES
             {"day": "Friday", "open": "09:00", "close": "22:00"},
             {"day": "Saturday", "open": "09:00", "close": "22:00"},
             {"day": "Sunday", "open": "09:00", "close": "22:00"}
+        ]'
+    ),
+    (
+        'Soft Ice Cream',
+        'softicecream@gmail.com',
+        'https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_328/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/images%2FGettyImages%2Fmmsport%2Fmentalfloss%2F01h46ds2hh8v1wxm1fpr.jpg',
+        'Dairy, Dairy Free',
+        4.0,
+        '{"💲"}',
+        '[
+            { "name": "Vanilla Swirl Cone", "description": "Creamy vanilla ice cream in a plain cone", "price": 4.99 },
+            { "name": "Vanilla Swirl Cone with sprinkles", "description": "Creamy vanilla ice cream in a plain cone with sprinkles of your choice", "price": 4.99 },
+            { "name": "Chocolate Swirl Cone", "description": "Creamy chocolate ice cream in a plain cone", "price": 4.99 },
+            { "name": "Chocolate Swirl Cone with sprinkles", "description": "Creamy chocolate ice cream in a plain cone with sprinkles of your choice", "price": 4.99 },
+            { "name": "Chocolate Waffle Cone", "description": "Creamy chocolate ice cream in a waffle cone", "price": 6.99 },
+            { "name": "Vanilla Waffle Cone", "description": "Creamy vanilla ice cream in a waffle cone", "price": 6.99 },
+            { "name": "Vanilla Double Swirl Cone", "description": "Creamy vanilla ice cream in a double plain cone", "price": 8.99 },
+            { "name": "Chocolate Double Swirl Cone", "description": "Creamy chocolate ice cream in a double plain cone", "price": 8.99 },
+            { "name": "Vanilla Double Dipped  Swirl Cone", "description": "Creamy vanilla ice cream dipped flavor coating in a double plain cone", "price": 6.99 },
+            { "name": "Chocolate Double Dipped Swirl Cone", "description": "Creamy chocolate ice cream dipped flavor coating in a double plain cone", "price": 6.99 },
+            { "name": "Coconut Frozen Yogurt Cone", "description": "Creamy coconut frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Pineapple Frozen Yogurt Cone", "description": "Creamy pineapple frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Strawberry Frozen Yogurt Cone", "description": "Creamy strawberry frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Blueberry Frozen Yogurt Cone", "description": "Creamy blueberry frozen yogurt in a waffle cone", "price": 6.49 },
+            { "name": "Strawberry Sundae", "description": "Vanilla ice cream with strawberries, nuts, and strawberry syrup", "price": 6.49 },
+            { "name": "Banana Split", "description": "Classic banana split with vanilla, chocolate, and strawberry ice cream", "price": 6.99 },
+            { "name": "Cherry Italian Icee", "description": "Cherry flavored icee treat", "price": 6.99 },
+            { "name": "Rainbow Italian Icee", "description": "Fruit punch flavored icee treat", "price": 6.99 },
+            { "name": "Coconut Italian Icee", "description": "Coconut flavored icee treat", "price": 6.99 }
+        ]',
+        true,
+        '[
+            {"lat": 40.716155, "lng": -74.016498}
+        ]',
+        '[
+            {
+            "period": "yearly",
+            "sales": 300000,
+            "transactions": 15000,
+            "monthly_variation": [
+                {
+                "month": "January",
+                "days": 31,
+                "sales_per_day": [1000, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000],
+                "transactions_per_day": [50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50]
+                },
+                {
+                "month": "February",
+                "days": 28,
+                "sales_per_day": [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400],
+                "transactions_per_day": [55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20]
+                },
+                {
+                "month": "March",
+                "days": 31,
+                "sales_per_day": [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 1000, 1100],
+                "transactions_per_day": [60, 65, 70, 75, 80, 85, 90, 95, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 50, 55]
+                }
+            ]
+            }
+        ]',
+        '[
+            {"day": "Monday", "open": "11:00", "close": "20:00"},
+            {"day": "Tuesday", "open": "11:00", "close": "20:00"},
+            {"day": "Wednesday", "open": "11:00", "close": "20:00"},
+            {"day": "Thursday", "open": "11:00", "close": "20:00"},
+            {"day": "Friday", "open": "11:00", "close": "20:00"},
+            {"day": "Saturday", "open": "11:00", "close": "20:00"},
+            {"day": "Sunday", "open": "11:00", "close": "20:00"}
         ]'
     );
 
