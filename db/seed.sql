@@ -1,4 +1,4 @@
-\c wmicserver_7ohn;
+\c wmicserver_7ohn_user;
 INSERT INTO
     vendors (
         vendor_name,
