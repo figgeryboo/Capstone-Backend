@@ -6,3 +6,5 @@ ServiceAccountKey.json
 
 firebaseConfig
 controllers/notes.txt
+
+db/nodes.js

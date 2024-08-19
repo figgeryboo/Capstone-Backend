@@ -144,23 +144,46 @@ const updateVendor = async (id, vendor) => {
       vendor_image_url,
       dietary_offering,
       rating_average,
+      payment_types,
       menu,
       accessible,
+      coordinates, 
+      transaction_metrics,
+      business_hours
     } = vendor;
 
     const updatedVendor = await db.one(
-      "UPDATE vendors SET vendor_name = $1, contact_info = $2, vendor_image_url = $3, dietary_offering = $4, rating_average = $5, menu = $6, accessible = $7 WHERE vendor_id = $8 RETURNING *",
+      `UPDATE vendors 
+       SET 
+         vendor_name = $1, 
+         contact_info = $2, 
+         vendor_image_url = $3, 
+         dietary_offering = $4, 
+         rating_average = $5, 
+         payment_types = $6, 
+         menu = $7, 
+         accessible = $8, 
+         coordinates = $9,
+         transaction_metrics = $10,
+         business_hours = $11
+       WHERE vendor_id = $12 
+       RETURNING *`,
       [
         vendor_name,
         contact_info,
         vendor_image_url,
         dietary_offering,
         rating_average,
+        payment_types,
         menu,
         accessible,
-        id,
+        coordinates, 
+        transaction_metrics,
+        business_hours,
+        id
       ]
     );
+
     return updatedVendor;
   } catch (err) {
     return err;
