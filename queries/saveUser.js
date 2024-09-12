@@ -83,4 +83,26 @@ firebase.post("/sendAllVendorsToPostgres", async (req, res) => {
   }
 });
 
+firebase.post("/sendNotificationOnVendorProximity", async (req, res) => {
+  const { token, title, body } = req.body;
+
+  const message = {
+    notification: {
+      title: title,
+      body: body,
+    },
+    token: token,
+  };
+
+  try {
+    const response = await admin.messaging().send(message);
+    console.log("Notification sent successfully:", response);
+    res.status(200).json({ message: "Notification sent successfully", response });
+  } catch (error) {
+    console.error("Error sending notification:", error);
+    res.status(500).json({ error: "Failed to send notification" });
+  }
+});
+
+
 module.exports = firebase;
