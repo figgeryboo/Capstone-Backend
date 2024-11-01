@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS wmicserver_bi9m;
+DROP DATABASE IF EXISTS wmic001;
 
-CREATE DATABASE wmicserver_bi9m;
+CREATE DATABASE wmic001;
 
-\c wmicserver_bi9m;
+\c wmic001;
 
 CREATE TABLE
     vendors (
