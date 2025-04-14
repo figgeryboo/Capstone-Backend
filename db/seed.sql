@@ -1,4 +1,5 @@
-\c wmic001;
+\c servingicecream;
+
 INSERT INTO
     vendors (
         vendor_name,

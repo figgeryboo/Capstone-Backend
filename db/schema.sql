@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS wmic001;
+DROP DATABASE IF EXISTS servingicecream;
 
-CREATE DATABASE wmic001;
+CREATE DATABASE servingicecream;
 
-\c wmic001;
+\c servingicecream;
 
 CREATE TABLE
     vendors (
